@@ -22,13 +22,13 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="links ml-auto" navbar>
             <NavItem>
-              <NavLink target="_blank" href="/about-me">About Me</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/resume">Resume</NavLink>
+              <NavLink href="/about-me">About Me</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/projects">Projects</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/resume">Resume</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/contact">Contact</NavLink>

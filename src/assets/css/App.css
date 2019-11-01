@@ -1,7 +1,11 @@
+/* Fonts:  */
 /* font-family: 'Permanent Marker', cursive;
 font-family: 'Caveat', cursive;
 font-family: 'McLaren', cursive; */
 
+/* some dope pink  */
+
+/* ----------------- HEADER -------------------- */
 .header {
   background: #141e30; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #243b55, #141e30); /* Chrome 10-25, Safari 5.1-6 */
@@ -22,11 +26,21 @@ font-family: 'McLaren', cursive; */
   font-size: 2em;
 }
 
+.header a.name-logo:hover {
+  color: azure;
+}
+
 .header .links a {
   font-family: 'Caveat', cursive;
   font-size: 1.3em;
 }
 
+.header .links a:hover {
+  color: orange;
+  font-size: 1.5em;
+}
+
+/* ------------------ LANDING PAGE ------------------- */
 .landing-container {
   background: #141e30; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #243b55, #141e30); /* Chrome 10-25, Safari 5.1-6 */
@@ -44,8 +58,8 @@ font-family: 'McLaren', cursive; */
 }
 
 .avatar-img {
-  height: 300px;
-  margin: 20px auto;
+  height: 240px;
+  margin: 10px auto;
   border-radius: 0 50% 50%;
   border: 40px solid orange;
 }
@@ -92,6 +106,57 @@ font-family: 'McLaren', cursive; */
 }
 
 .social-links a:hover {
+  color: orange;
+}
+
+/* ---------------- PROJECTS --------------------- */
+.projects-container {
+  margin: 2em;
+}
+
+.projects-container h1 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  margin: 30px;
+  font-weight: bold;
+  color: #243b55;
+}
+
+.ma-tabs a {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ma-tabs a.active {
   font-weight: bolder;
-  color: rgb(253, 105, 135);
+  color: orangered;
+}
+
+.tab-content-wrap {
+  margin: 10px auto;
+}
+
+.card-pic {
+  opacity: .3;
+}
+
+.title {
+  /* text-align: center; */
+  font-size: 3em;
+  font-family: 'McLaren', cursive;
+  font-weight: bolder;
+  color: #141e30;
+}
+
+.jazz {
+  font-size: 1em;
+  font-family: 'McLaren', cursive;
+  font-weight: bold;
+  color: #243b55;
+}
+
+button i {
+  font-size: 3em;
+  margin-right: 1em;
 }

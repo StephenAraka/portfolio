@@ -13,7 +13,7 @@ export class Landing extends Component {
             <img src={mandem} alt='avatar' className='avatar-img' />
 
             <div className='banner-text'>
-              <h1 className='pt-3'>Frontend Web Developer</h1>
+              <h1 className='pt-2'>Frontend Web Developer</h1>
 
               <hr />
 
