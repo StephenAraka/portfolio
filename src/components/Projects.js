@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CardImgOverlay, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardImg, CardBody, CardSubtitle, CardText, Row, Col } from 'reactstrap';
+import { CardImgOverlay, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardImg, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import react from '../assets/img/react.png'
 

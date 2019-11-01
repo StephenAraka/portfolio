@@ -30,12 +30,13 @@ font-family: 'McLaren', cursive; */
   color: azure;
 }
 
-.header .links a {
+.header .links a.link {
+  text-decoration: none;
   font-family: 'Caveat', cursive;
   font-size: 1.3em;
 }
 
-.header .links a:hover {
+.header .links a.link:hover {
   color: orange;
   font-size: 1.5em;
 }
