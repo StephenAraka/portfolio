@@ -16,13 +16,13 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">Stephen Araka</NavbarBrand>
+      <Navbar className='header' expand="md">
+        <NavbarBrand href="/" className='name-logo'>Stephen Araka</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="links ml-auto" navbar>
             <NavItem>
-              <NavLink href="/about-me">About Me</NavLink>
+              <NavLink target="_blank" href="/about-me">About Me</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/resume">Resume</NavLink>
