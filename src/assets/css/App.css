@@ -39,6 +39,7 @@ font-family: 'McLaren', cursive; */
 .header .links a.link:hover {
   color: orange;
   font-size: 1.5em;
+  transition-delay: 500ms;
 }
 
 /* ------------------ LANDING PAGE ------------------- */
@@ -161,3 +162,62 @@ button i {
   font-size: 3em;
   margin-right: 1em;
 }
+
+/* ------------------ CONTACTS PAGE ------------------- */
+.contacts-container {
+  margin: auto;
+  background: whitesmoke;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contacts-grid {
+  text-align: center;
+  justify-content: center;
+  background: whitesmoke;
+  width: 80%;
+  height: 80%;
+  color: #363636;
+  margin-bottom: 20px;
+}
+
+.contacts-grid h2 {
+  margin-top: 10px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.contact-pic {
+  height: 250px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.contacts-grid p {
+  font-family: 'McLaren', cursive;
+  width: 60%;
+  margin: auto;
+  padding-top: 1em;
+}
+
+.contacts-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.contacts-grid .list-item {
+  font-family: 'McLaren', cursive;
+  background: whitesmoke;
+  font-size: 17px;
+  text-align: left;
+}
+
+.contacts-grid .list-item .icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+/* todo center div .contacts-grid */
