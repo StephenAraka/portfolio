@@ -26,7 +26,7 @@
    5. Don't save money... Make it work for you!
 
    ?
-   6. Face ypur fears... Don't fail to admit that you have fears!
+   6. Face your fears... Don't fail to admit that you have fears!
 
    ! It is how you think that makes you RICH or poor!
 
@@ -66,8 +66,7 @@
 
 .header .links a.link:hover {
   color: orange;
-  font-size: 1.5em;
-  transition-delay: 500ms;
+  transition-delay: 100ms;
 }
 
 /* ------------------ LANDING PAGE ------------------- */
@@ -195,7 +194,7 @@ button i {
 .contacts-container {
   margin: auto;
   background: whitesmoke;
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -203,13 +202,14 @@ button i {
 }
 
 .contacts-grid {
+  position: relative;
   text-align: center;
   justify-content: center;
   background: whitesmoke;
   width: 80%;
-  height: 80%;
+  height: auto;
   color: #363636;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .contacts-grid h2 {
@@ -247,5 +247,3 @@ button i {
   font-size: 30px;
   margin-right: 15px;
 }
-
-/* todo center div .contacts-grid */
