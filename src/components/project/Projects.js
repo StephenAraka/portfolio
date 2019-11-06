@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CardImgOverlay, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardImg, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import react from '../assets/img/react.png'
+import react from '../../assets/img/react.png'
 
 const Projects = (props) => {
   const [activeTab, setActiveTab] = useState('1');

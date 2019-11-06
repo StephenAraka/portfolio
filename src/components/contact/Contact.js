@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Row, Col, ListGroup, ListGroupItem, ListGroupItemText } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import mandem from '../assets/img/mandem.png';
+import mandem from '../../assets/img/mandem.png';
 
 export class Contacts extends Component {
   render() {

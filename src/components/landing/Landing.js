@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'reactstrap';
-import mandem from '../assets/img/mandem.png';
+import mandem from '../../assets/img/mandem.png';
 
 
 export class Landing extends Component {
