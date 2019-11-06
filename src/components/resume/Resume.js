@@ -15,7 +15,7 @@ export class Resume extends Component {
           <div className='resume-grid'>
             <Row>
               <Col xs='4' className='resume-left'>
-                <div>
+                <div className='mt-4'>
                   <img src={mandem} alt='myself' className='contact-pic' />
                 </div>
 
@@ -41,6 +41,9 @@ export class Resume extends Component {
               </Col>
 
               <Col xs='8' className='resume-right'>
+
+                <hr style={{ width: '100%', borderTop: '3px solid orange' }} />
+
                 <h2>Education </h2>
 
                 <Education
