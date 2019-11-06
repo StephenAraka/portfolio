@@ -7,7 +7,6 @@ import mandem from '../../assets/img/mandem.png';
 export class Contacts extends Component {
   render() {
     return (
-      // todo center div .contacts-grid
       <div className='contacts-container'>
         <div className='contacts-grid'>
           <Row>
