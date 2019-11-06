@@ -264,6 +264,7 @@ button i {
 .resume-grid {
   position: relative;
   width: 97.7%;
+  /* width: 100%; */
   justify-content: center;
   height: auto;
   margin: 0 auto;
@@ -275,10 +276,25 @@ button i {
 
 .resume-left h2 {
   padding-top: 2em;
+  font-family: "McLaren", cursive;
 }
 
 .resume-left h4 {
   color: grey;
+}
+
+.resume-left p {
+  color: #646363;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resume-right p {
+  color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resume-left h5 {
+  font-family: "McLaren", cursive;
 }
 
 .resume-left hr {
@@ -290,4 +306,8 @@ button i {
   background: #27221f;
   color: white;
   padding: 2em;
+}
+
+.resume-right h2 {
+  font-weight: normal;
 }
