@@ -17,7 +17,7 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar className='header' expand="md">
+      <Navbar className='header' expand="sm">
         <NavbarBrand href="/portfolio" className='name-logo'>Stephen Araka</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -26,10 +26,10 @@ const Header = (props) => {
               <NavLink><Link className='link' to='/portfolio/about-me'>About Me</Link></NavLink>
             </NavItem> */}
             <NavItem>
-              <NavLink><Link className='link' to='/portfolio/projects'>Projects</Link></NavLink>
+              <NavLink><Link className='link' to='/portfolio/resume'>Resume</Link></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink><Link className='link' to='/portfolio/resume'>Resume</Link></NavLink>
+              <NavLink><Link className='link' to='/portfolio/projects'>Projects</Link></NavLink>
             </NavItem>
             <NavItem>
               <NavLink><Link className='link' to='/portfolio/contact'>Contact</Link></NavLink>
