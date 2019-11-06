@@ -196,7 +196,7 @@ button i {
   background: whitesmoke;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   padding-top: 2em;
 }
@@ -246,4 +246,28 @@ button i {
 .contacts-grid .list-item .icon {
   font-size: 30px;
   margin-right: 15px;
+}
+
+/* ------------------ RESUME PAGE ------------------- */
+.resume-left div {
+  text-align: center;
+}
+
+.resume-left h2 {
+  padding-top: 2em;
+}
+
+.resume-left h4 {
+  color: grey;
+}
+
+.resume-left hr {
+  border-top: 3px solid #833fb2;
+  width: 90%;
+}
+
+.resume-right {
+  background: #27221f;
+  color: white;
+  padding: 2em;
 }
