@@ -17,7 +17,7 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar className='header' expand="sm">
+      <Navbar className='header' dark expand="md">
         <NavbarBrand href="/portfolio" className='name-logo'>Stephen Araka</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

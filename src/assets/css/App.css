@@ -320,3 +320,8 @@ button i {
   /* color: #5da0ec; */
   color: #3ad8ff;
 }
+
+.navbar-toggler {
+  color: #3ad8ff;
+  background-color: #3ad8ff;
+}
