@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "gh-pages": "^2.1.1"
   }
 }

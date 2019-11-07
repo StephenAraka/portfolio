@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'reactstrap';
-import mandem from '../assets/img/mandem.png';
+import mandem from '../../assets/img/mandem.png';
 
 
 export class Landing extends Component {
@@ -21,23 +21,23 @@ export class Landing extends Component {
 
               <div className='social-links'>
                 {/* LinkedIn */}
-                <Link to='http://google.co.ke' rel='noopener noreferrer' target='_blank'>
-                  <i className='fa fa-linkedin-square' aria-hidden='true' />
+                <Link to='https://www.linkedin.com/in/stephen-araka-9a2571177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDRRFgLG3TSyl6f3kU9VXpA%3D%3D' rel='noopener noreferrer' target='_blank'>
+                  <i className='fab fa-linkedin' aria-hidden='true' />
                 </Link>
 
                 {/* Github */}
-                <Link to='http://google.co.ke' rel='noopener noreferrer' target='_blank'>
-                  <i className='fa fa-github-square' aria-hidden='true' />
+                <Link to='https://github.com/StephenAraka' rel='noopener noreferrer' target='_blank'>
+                  <i className='fab fa-github-square' aria-hidden='true' />
                 </Link>
 
                 {/* Twitter */}
-                <Link to='http://google.co.ke' rel='noopener noreferrer' target='_blank'>
-                  <i className='fa fa-twitter-square' aria-hidden='true' />
+                <Link to='https://twitter.com/StivoAraka' rel='noopener noreferrer' target='_blank'>
+                  <i className='fab fa-twitter-square' aria-hidden='true' />
                 </Link>
 
                 {/* CodePen */}
-                <Link to='http://google.co.ke' rel='noopener noreferrer' target='_blank'>
-                  <i className='fa fa-codepen' aria-hidden='true' />
+                <Link to='https://codepen.io/stevenaraka/' rel='noopener noreferrer' target='_blank'>
+                  <i className='fab fa-codepen' aria-hidden='true' />
                 </Link>
               </div>
 
