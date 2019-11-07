@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Education from './Education';
 import Experience from './Experience';
 import Skills from './Skills';
+import Languages from './Languages';
 
 import mandem from '../../assets/img/mandem.png';
 
@@ -48,7 +49,7 @@ experience, technical expertise and problem solving skills.</p>
                 <p>&#115;&#116;&#101;&#118;&#101;&#110;&#097;&#114;&#097;&#107;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</p>
 
                 <h5><FontAwesomeIcon className='mt-2 mr-2' icon='globe' />Web</h5>
-                <p><Link to='stephenaraka.github.io/portfolio'>Portfolio Website Home</Link></p>
+                <p><Link to='/portfolio'>Portfolio Website Home</Link></p>
                 <hr />
               </Col>
 
@@ -93,7 +94,7 @@ experience, technical expertise and problem solving skills.</p>
                 <Experience
                   startYear='4th June 2018'
                   endYear='10th August 2018'
-                  jobName='Developer Consultant Intern'
+                  jobName='Developer Consultant (Intern)'
                   jobDescription='Developer Consultant Intern for Flock of Birds, Uganda'
                 />
 
@@ -154,6 +155,14 @@ experience, technical expertise and problem solving skills.</p>
                   progress={25}
                   color='danger'
                 />
+
+                <hr style={{ width: '100%', borderTop: '3px solid orange' }} />
+
+                <h2>Languages </h2>
+
+                <Languages />
+
+                <hr style={{ width: '100%', borderTop: '3px solid orange' }} />
 
               </Col>
             </Row>
