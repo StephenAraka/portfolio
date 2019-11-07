@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { ModalFooter, CardImgOverlay, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardImg, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import react from '../../assets/img/react.png'
+import react from '../../assets/img/react.png';
+import html from '../../assets/img/html.png';
+import node from '../../assets/img/node.png';
 
 const Projects = (props) => {
   const [activeTab, setActiveTab] = useState('1');
@@ -46,7 +48,7 @@ const Projects = (props) => {
           <Row>
             <Col sm="4">
               <Card inverse>
-                <CardImg className='card-pic' width="100%" src={react} alt="Card image cap" />
+                <CardImg className='card-pic' width="100%" src={html} alt="Card image cap" />
                 <CardImgOverlay className='card-pic-text'>
                   <CardTitle className='title'>HTML/CSS Project #1</CardTitle>
                   <CardText className='jazz'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
@@ -59,7 +61,7 @@ const Projects = (props) => {
 
             <Col sm="4">
               <Card inverse>
-                <CardImg className='card-pic' width="100%" src={react} alt="Card image cap" />
+                <CardImg className='card-pic' width="100%" src={html} alt="Card image cap" />
                 <CardImgOverlay className='card-pic-text'>
                   <CardTitle className='title'>HTML/CSS Project #2</CardTitle>
                   <CardText className='jazz'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
@@ -72,7 +74,7 @@ const Projects = (props) => {
 
             <Col sm="4">
               <Card inverse>
-                <CardImg className='card-pic' width="100%" src={react} alt="Card image cap" />
+                <CardImg className='card-pic' width="100%" src={html} alt="Card image cap" />
                 <CardImgOverlay className='card-pic-text'>
                   <CardTitle className='title'>HTML/CSS Project #3</CardTitle>
                   <CardText className='jazz'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
@@ -132,7 +134,7 @@ const Projects = (props) => {
           <Row>
             <Col sm="4">
               <Card inverse>
-                <CardImg className='card-pic' width="100%" src={react} alt="Card image cap" />
+                <CardImg className='card-pic' width="100%" src={node} alt="Card image cap" />
                 <CardImgOverlay className='card-pic-text'>
                   <CardTitle className='title'>Express Project #1</CardTitle>
                   <CardText className='jazz'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
@@ -145,7 +147,7 @@ const Projects = (props) => {
 
             <Col sm="4">
               <Card inverse>
-                <CardImg className='card-pic' width="100%" src={react} alt="Card image cap" />
+                <CardImg className='card-pic' width="100%" src={node} alt="Card image cap" />
                 <CardImgOverlay className='card-pic-text'>
                   <CardTitle className='title'>Express Project #2</CardTitle>
                   <CardText className='jazz'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>

@@ -13,7 +13,7 @@ export class Contacts extends Component {
             <Col>
               <h2>Stephen Araka</h2>
               <img src={mandem} alt='myself' className='contact-pic' />
-              <p>Lorem Ipsum. Expected corresponding JSX closing tag for 'p'Lorem Ipsum. Expected corresponding JSX closing tag for 'p' Lorem Ipsum. Expected corresponding JSX closing tag for 'p'</p>
+              <p style={{textAlign: 'left'}}>Creative and people-oriented Computer Scientist with extensive project management experience. Advanced knowledge and experience in fulfilling roles at both technical and operational level.</p>
             </Col>
             <Col>
               <h2>Contact Me</h2>
@@ -39,7 +39,7 @@ export class Contacts extends Component {
 
                 <ListGroupItem className='list-item'>
                   <ListGroupItemText>
-                    <i className='icon fa fa-skype' aria-hidden='true' /> StephenAraka
+                    <i className='icon fab fa-skype' aria-hidden='true' /> StephenAraka
                 </ListGroupItemText>
                 </ListGroupItem>
 

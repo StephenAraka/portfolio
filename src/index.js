@@ -5,10 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter  } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faPhoneSquare, faFax } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faGlobe, faPhoneAlt, faEnvelope, faPhoneSquare, faFax } from '@fortawesome/free-solid-svg-icons';
+// import '@fortawesome/fontawesome-free';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-library.add(faEnvelope, faPhoneSquare, faFax);
+library.add(faHome, faGlobe, faEnvelope, faPhoneAlt, faPhoneSquare, faFax);
 
 
 ReactDOM.render(
