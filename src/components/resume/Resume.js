@@ -33,7 +33,7 @@ export class Resume extends Component {
                 <p>07512345678</p>
 
                 <h5>Email</h5>
-                <p>stevenaraka@gmail.com</p>
+                <p>&#115;&#116;&#101;&#118;&#101;&#110;&#097;&#114;&#097;&#107;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</p>
 
                 <h5>Web</h5>
                 <p>stephenaraka.github.io/portfolio</p>
