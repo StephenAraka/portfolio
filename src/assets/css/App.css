@@ -31,7 +31,6 @@
    ! It is how you think that makes you RICH or poor!
 
 */
-
 .container-all {
   width: 100%;
   margin: 0;
@@ -87,7 +86,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .avatar-img {
@@ -215,7 +214,7 @@ button i {
   justify-content: center;
   background: whitesmoke;
   width: 80%;
-  height: auto;
+  height: 100%;
   color: #363636;
   margin: 0 auto 20px;
 }
@@ -289,12 +288,12 @@ button i {
 
 .resume-left p {
   color: #646363;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .resume-right p {
   color: whitesmoke;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .resume-left h5 {
@@ -321,7 +320,12 @@ button i {
   color: #3ad8ff;
 }
 
-.navbar-toggler {
-  color: #3ad8ff;
-  background-color: #3ad8ff;
+@media only screen and (max-width: 900px) {
+  .resume-grid .row {
+    display: block;
+  }
+
+  .resume-grid .row .col {
+    width: 100vw !important;
+  }
 }

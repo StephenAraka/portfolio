@@ -10,12 +10,12 @@ export class Contacts extends Component {
       <div className='contacts-container'>
         <div className='contacts-grid'>
           <Row>
-            <Col>
+            <Col xs='12' sm='12' md='6' lg='6'>
               <h2>Stephen Araka</h2>
               <img src={mandem} alt='myself' className='contact-pic' />
               <p style={{textAlign: 'left'}}>Creative and people-oriented Computer Scientist with extensive project management experience. Advanced knowledge and experience in fulfilling roles at both technical and operational level.</p>
             </Col>
-            <Col>
+            <Col xs='12' sm='12' md='6' lg='6'>
               <h2>Contact Me</h2>
               <hr />
               <ListGroup>

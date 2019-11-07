@@ -17,7 +17,7 @@ export class Resume extends Component {
         <div className='resume-container'>
           <div className='resume-grid'>
             <Row>
-              <Col xs='4' className='resume-left'>
+              <Col xs='12' sm='12' md='6' lg='4' className='resume-left'>
                 <div className='mt-4'>
                   <img src={mandem} alt='myself' className='contact-pic' />
                 </div>
@@ -53,7 +53,7 @@ experience, technical expertise and problem solving skills.</p>
                 <hr />
               </Col>
 
-              <Col xs='8' className='resume-right'>
+              <Col xs='12' sm='12' md='6' lg='8' className='resume-right'>
 
                 <hr style={{ width: '100%', borderTop: '3px solid orange' }} />
 
