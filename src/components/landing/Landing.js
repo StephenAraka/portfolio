@@ -21,24 +21,24 @@ export class Landing extends Component {
 
               <div className='social-links'>
                 {/* LinkedIn */}
-                <Link to='https://www.linkedin.com/in/stephen-araka-9a2571177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDRRFgLG3TSyl6f3kU9VXpA%3D%3D' rel='noopener noreferrer' target='_blank'>
+                <a href='https://www.linkedin.com/in/stephen-araka-9a2571177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDRRFgLG3TSyl6f3kU9VXpA%3D%3D' rel='noopener noreferrer' target='_blank'>
                   <i className='fab fa-linkedin' aria-hidden='true' />
-                </Link>
+                </a>
 
                 {/* Github */}
-                <Link to='https://github.com/StephenAraka' rel='noopener noreferrer' target='_blank'>
+                <a href='https://github.com/StephenAraka' rel='noopener noreferrer' target='_blank'>
                   <i className='fab fa-github-square' aria-hidden='true' />
-                </Link>
+                </a>
 
                 {/* Twitter */}
-                <Link to='https://twitter.com/StivoAraka' rel='noopener noreferrer' target='_blank'>
+                <a href='https://twitter.com/StivoAraka' rel='noopener noreferrer' target='_blank'>
                   <i className='fab fa-twitter-square' aria-hidden='true' />
-                </Link>
+                </a>
 
                 {/* CodePen */}
-                <Link to='https://codepen.io/stevenaraka/' rel='noopener noreferrer' target='_blank'>
+                <a href='https://codepen.io/stevenaraka/' rel='noopener noreferrer' target='_blank'>
                   <i className='fab fa-codepen' aria-hidden='true' />
-                </Link>
+                </a>
               </div>
 
             </div>
