@@ -11,7 +11,6 @@ export class Skills extends Component {
           </Col>
           <Col xs='10'>
             <Progress
-              style={{ height:'10px', margin: 'auto', width: '75%' }}
               value={this.props.progress}
               color={this.props.color}
             />

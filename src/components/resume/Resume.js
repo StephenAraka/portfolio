@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Progress } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Education from './Education';
@@ -49,7 +49,7 @@ experience, technical expertise and problem solving skills.</p>
                 <p>&#115;&#116;&#101;&#118;&#101;&#110;&#097;&#114;&#097;&#107;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</p>
 
                 <h5><FontAwesomeIcon className='mt-2 mr-2' icon='globe' />Web</h5>
-                <p><Link to='/portfolio'>Portfolio Website Home</Link></p>
+                <p><Link to='/'>Portfolio Website Home</Link></p>
                 <hr />
               </Col>
 
