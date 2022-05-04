@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as HomeBlob } from '../assets/img/blob.svg';
+import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
 
 const Main = () => (
   <main className="main">
@@ -20,7 +20,7 @@ const Main = () => (
         </div>
 
         <div className="home__img">
-          <HomeBlob />
+          <ProfilePic />
         </div>
 
         <div className="home__data">
