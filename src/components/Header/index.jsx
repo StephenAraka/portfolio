@@ -9,39 +9,39 @@ const Header = () => {
     // <!--==================== HEADER ====================-->
     <header className="header" id="header">
       <nav className="container nav">
-        <Link to="#" className="nav__logo">Stephen</Link>
+        <a href="#" className="nav__logo">Stephen</a>
 
         <div className={`nav__menu ${(showMenu ? 'show-menu' : '')}`} id="nav-menu">
           <ul className="nav__list grid">
             <li className="nav__item" onClick={() => setShowMenu(false)}>
-              <Link to="#home" className="nav__link">
+              <a href="#home" className="nav__link">
                 <i className="uil uil-estate"></i> Home
-              </Link>
+              </a>
             </li>
             <li className="nav__item" onClick={() => setShowMenu(false)}>
-              <Link to="#about" className="nav__link">
+              <a href="#about" className="nav__link">
                 <i className="uil uil-user"></i> About
-              </Link>
+              </a>
             </li>
             <li className="nav__item" onClick={() => setShowMenu(false)}>
-              <Link to="#skills" className="nav__link">
+              <a href="#skills" className="nav__link">
                 <i className="uil uil-file-alt"></i> Skills
-              </Link>
+              </a>
             </li>
             <li className="nav__item" onClick={() => setShowMenu(false)}>
-              <Link to="#services" className="nav__link">
+              <a href="#services" className="nav__link">
                 <i className="uil uil-briefcase-alt"></i> Services
-              </Link>
+              </a>
             </li>
             <li className="nav__item" onClick={() => setShowMenu(false)}>
-              <Link to="#portfolio" className="nav__link">
+              <a href="#portfolio" className="nav__link">
                 <i className="uil uil-scenery"></i> Portfolio
-              </Link>
+              </a>
             </li>
             <li className="nav__item" onClick={() => setShowMenu(false)}>
-              <Link to="#contact" className="nav__link">
+              <a href="#contact" className="nav__link">
                 <i className="uil uil-message"></i> Contact Me
-              </Link>
+              </a>
             </li>
           </ul>
           {showMenu && (
