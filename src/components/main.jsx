@@ -4,23 +4,9 @@ import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
 import aboutImg from '../assets/img/about.jpg';
 
 const Main = () => {
-  const [skillsSections, setSkillsSections] = useState([true, false, false]);
-
-  const toggleSkills = (index) => {
-    let currTrueIndex = skillsSections.findIndex(e => e === true);
-    let skillsSectionsCopy = skillsSections;
-
-    console.log(" before ", skillsSectionsCopy);
-
-    skillsSectionsCopy[currTrueIndex] = false;
-    skillsSectionsCopy[index] = true;
-
-    console.log(" after ", skillsSectionsCopy);
-
-    setSkillsSections(skillsSectionsCopy);
-
-    console.log(skillsSections[1]);
-  }
+  const [showSkills1, setShowSkills1] = useState(true);
+  const [showSkills2, setShowSkills2] = useState(false);
+  const [showSkills3, setShowSkills3] = useState(false);
 
   return (
     <main className="main">
@@ -112,8 +98,8 @@ const Main = () => {
           <div>
 
             {/* === SKILLS 1 === */}
-            <div className={`${skillsSections[0] ? 'skills__content skills__open' : 'skills__content skills__close'}`}>
-              <div className="skills__header" onClick={() => toggleSkills(0)}>
+            <div className={`skills__content ${showSkills1 ? 'skills__open' : 'skills__close'}`}>
+              <div className="skills__header" onClick={() => setShowSkills1(!showSkills1)}>
                 <i className="uil uil-brackets-curly skills__icon"></i>
 
                 <div>
@@ -170,8 +156,8 @@ const Main = () => {
 
 
             {/* === SKILLS 2 === */}
-            <div className={`skills__content ${skillsSections[1] ? 'skills__open' : 'skills__close'}`}>
-              <div className="skills__header" onClick={() => toggleSkills(1)}>
+            <div className={`skills__content ${showSkills2 ? 'skills__open' : 'skills__close'}`}>
+              <div className="skills__header" onClick={() => setShowSkills2(!showSkills2)}>
                 <i className="uil uil-server-network skills__icon"></i>
 
                 <div>
@@ -228,8 +214,8 @@ const Main = () => {
 
 
             {/* === SKILLS 2 === */}
-            <div className={`skills__content ${skillsSections[2] ? 'skills__open' : 'skills__close'}`}>
-              <div className="skills__header" onClick={() => toggleSkills(2)}>
+            <div className={`skills__content ${showSkills3 ? 'skills__open' : 'skills__close'}`}>
+              <div className="skills__header" onClick={() => setShowSkills3(!showSkills3)}>
                 <i className="uil uil-swatchbook skills__icon"></i>
 
                 <div>
