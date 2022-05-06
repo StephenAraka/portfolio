@@ -8,6 +8,7 @@ const Main = () => {
   const [showSkills2, setShowSkills2] = useState(false);
   const [showSkills3, setShowSkills3] = useState(false);
   const [isEducation, setIsEducation] = useState(true);
+  const [showModal, setShowModal] = useState('');
 
   return (
     <main className="main">
@@ -403,15 +404,18 @@ const Main = () => {
               <h3 className="services__title">Ui/Ux <br /> Designer</h3>
             </div>
 
-            <span className="button button--flex button--small button--link services__button">
+            <span
+              className="button button--flex button--small button--link services__button"
+              onClick={() => setShowModal('designer')}
+            >
               View More
               <i className="uil uil-arrow-right button__icon"></i>
             </span>
 
-            <div className="services__modal">
+            <div className={`services__modal ${showModal === 'designer' && 'active-modal'}`}>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Ui/Ux <br /> Designer</h4>
-                <i className="uil uil-times services__modal-close"></i>
+                <i className="uil uil-times services__modal-close" onClick={() => setShowModal('')}></i>
 
                 <ul className="services__modal-services grid">
                   <li className="services__modal-service">
@@ -438,15 +442,18 @@ const Main = () => {
               <h3 className="services__title">Frontend <br /> Engineer</h3>
             </div>
 
-            <span className="button button--flex button--small button--link services__button">
+            <span
+              className="button button--flex button--small button--link services__button"
+              onClick={() => setShowModal('frontend')}
+            >
               View More
               <i className="uil uil-arrow-right button__icon"></i>
             </span>
 
-            <div className="services__modal">
+            <div className={`services__modal ${showModal === 'frontend' && 'active-modal'}`}>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Frontend <br /> Engineer</h4>
-                <i className="uil uil-times services__modal-close"></i>
+                <i className="uil uil-times services__modal-close" onClick={() => setShowModal('')}></i>
 
                 <ul className="services__modal-services grid">
                   <li className="services__modal-service">
@@ -473,15 +480,18 @@ const Main = () => {
               <h3 className="services__title">Backend <br /> Engineer</h3>
             </div>
 
-            <span className="button button--flex button--small button--link services__button">
+            <span
+              className="button button--flex button--small button--link services__button"
+              onClick={() => setShowModal('backend')}
+            >
               View More
               <i className="uil uil-arrow-right button__icon"></i>
             </span>
 
-            <div className="services__modal">
+            <div className={`services__modal ${showModal === 'backend' && 'active-modal'}`}>
               <div className="services__modal-content">
                 <h4 className="services__modal-title">Backend <br /> Engineer</h4>
-                <i className="uil uil-times services__modal-close"></i>
+                <i className="uil uil-times services__modal-close" onClick={() => setShowModal('')}></i>
 
                 <ul className="services__modal-services grid">
                   <li className="services__modal-service">
@@ -495,6 +505,44 @@ const Main = () => {
                   <li className="services__modal-service">
                     <i className="uil uil-check-circle services__modal-icon"></i>
                     Client integration
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* === SERVICES 4 === */}
+          <div className="services__content">
+            <div>
+              <i className="uil uil-web-grid services__icon"></i>
+              <h3 className="services__title">DevOps <br /> Engineer</h3>
+            </div>
+
+            <span
+              className="button button--flex button--small button--link services__button"
+              onClick={() => setShowModal('devops')}
+            >
+              View More
+              <i className="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div className={`services__modal ${showModal === 'devops' && 'active-modal'}`}>
+              <div className="services__modal-content">
+                <h4 className="services__modal-title">DevOps <br /> Engineer</h4>
+                <i className="uil uil-times services__modal-close" onClick={() => setShowModal('')}></i>
+
+                <ul className="services__modal-services grid">
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    Aspiring Devops Engineer
+                  </li>
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    Currently learning
+                  </li>
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    Soon transitioning to DevOps
                   </li>
                 </ul>
               </div>
