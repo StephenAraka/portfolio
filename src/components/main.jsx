@@ -7,6 +7,7 @@ const Main = () => {
   const [showSkills1, setShowSkills1] = useState(true);
   const [showSkills2, setShowSkills2] = useState(false);
   const [showSkills3, setShowSkills3] = useState(false);
+  const [isEducation, setIsEducation] = useState(true);
 
   return (
     <main className="main">
@@ -252,12 +253,18 @@ const Main = () => {
         <span className="section__subtitle">My personal journey</span>
         <div className="qualification__container container">
           <div className="qualification__tabs">
-            <div className="qualification__button button--flex">
+            <div
+              className={`qualification__button button--flex ${isEducation ? 'qualification__active' : ''}`}
+              onClick={() => setIsEducation(!isEducation)}
+            >
               <i className="uil uil-graduation-cap qualification__icon"></i>
               Education
             </div>
 
-            <div className="qualification__button button--flex">
+            <div
+              className={`qualification__button button--flex ${isEducation ? '' : 'qualification__active'}`}
+              onClick={() => setIsEducation(!isEducation)}
+            >
               <i className="uil uil-briefcase-alt qualification__icon"></i>
               Work
             </div>
@@ -265,7 +272,7 @@ const Main = () => {
 
           <div className="qualification__sections">
             {/* === QUALIFICATION CONTENT 1 === */}
-            <div className="qualification__content qualification__active" data-content id="education">
+            <div className={`qualification__content ${isEducation ? 'qualification__active' : ''}`} data-content id="education">
 
               {/* === QUALIFICATION 1 === */}
               <div className="qualification__data">
@@ -305,7 +312,7 @@ const Main = () => {
             </div>
 
             {/* === QUALIFICATION CONTENT 2 === */}
-            <div className="qualification__content" data-content id="work">
+            <div className={`qualification__content ${isEducation ? '' : 'qualification__active'}`} data-content id="work">
 
               {/* === QUALIFICATION 1 === */}
               <div className="qualification__data">
