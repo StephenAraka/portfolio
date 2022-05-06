@@ -528,6 +528,7 @@ img {
 }
 
 .qualification__button:hover {
+  cursor: pointer;
   color: var(--first-color);
 }
 
