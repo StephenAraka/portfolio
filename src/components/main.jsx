@@ -248,7 +248,139 @@ const Main = () => {
 
       {/* <!--==================== QUALIFICATION ====================--> */}
       <section className="qualification section">
+        <h2 className="section__title">Qualification</h2>
+        <span className="section__subtitle">My personal journey</span>
+        <div className="qualification__container container">
+          <div className="qualification__tabs">
+            <div className="qualification__button button--flex">
+              <i className="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
 
+            <div className="qualification__button button--flex">
+              <i className="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
+          </div>
+
+          <div className="qualification__sections">
+            {/* === QUALIFICATION CONTENT 1 === */}
+            <div className="qualification__content qualification__active" data-content id="education">
+
+              {/* === QUALIFICATION 1 === */}
+              <div className="qualification__data">
+                <div>
+                  <h3 className="qualification__title">Computer Science</h3>
+                  <span className="qualification__subtitle">Makerere University - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2016 - 2019
+                  </div>
+                </div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 2 === */}
+              <div className="qualification__data">
+                <div></div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 className="qualification__title">Msc. IT</h3>
+                  <span className="qualification__subtitle">Carnegie Mellon University - Africa</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2020 - 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* === QUALIFICATION CONTENT 2 === */}
+            <div className="qualification__content" data-content id="work">
+
+              {/* === QUALIFICATION 1 === */}
+              <div className="qualification__data">
+                <div>
+                  <h3 className="qualification__title">Developer Consultant</h3>
+                  <span className="qualification__subtitle">Flock Of Birds - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2018 - 2019
+                  </div>
+                </div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 2 === */}
+              <div className="qualification__data">
+                <div></div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 className="qualification__title">Software Engineer</h3>
+                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2019 - 2021
+                  </div>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 3 === */}
+              <div className="qualification__data">
+                <div>
+                  <h3 className="qualification__title">DevOps Engineer</h3>
+                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2021 - 2022
+                  </div>
+                </div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 2 === */}
+              <div className="qualification__data">
+                <div></div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 className="qualification__title">Graduate Teaching Assistant</h3>
+                  <span className="qualification__subtitle">Carnegie Mellon University - Africa</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2021 - Present
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* <!--==================== SERVICES ====================--> */}
