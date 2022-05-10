@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
 import aboutImg from '../assets/img/about.jpg';
+import contactImg from '../assets/img/contact.png';
 import ccImg from '../assets/img/cc.png';
 import coastImg from '../assets/img/coast.png';
 import petsImg from '../assets/img/pets.png';
@@ -682,7 +683,19 @@ const Main = () => {
 
       {/* <!--==================== PROJECT IN MIND ====================--> */}
       <section className="project section">
-
+        <div className="project__bg">
+          <div className="project__container grid container">
+            <div className="project__data">
+              <h2 className="project__title">Have a project we can work on?</h2>
+              <p className="project__description">Contact me now and let us talk about it!</p>
+              <a href="#contact" className="button button--flex button--white">
+                Contact Me
+                <i className="uil uil-message project__icon button__icon"></i>
+              </a>
+            </div>
+            <img src={contactImg} alt="contact" className="project__img" />
+          </div>
+        </div>
       </section>
 
       {/* <!--==================== TESTIMONIAL ====================--> */}
