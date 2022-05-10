@@ -6,13 +6,16 @@ import ccImg from '../assets/img/cc.png';
 import coastImg from '../assets/img/coast.png';
 import petsImg from '../assets/img/pets.png';
 import covidImg from '../assets/img/covid.png';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react/swiper-react.js';
 
 const Main = () => {
+  const swiper = useSwiper();
   const [showSkills1, setShowSkills1] = useState(true);
   const [showSkills2, setShowSkills2] = useState(false);
   const [showSkills3, setShowSkills3] = useState(false);
   const [isEducation, setIsEducation] = useState(true);
   const [showModal, setShowModal] = useState('');
+  const [activeCarousel, setActiveCarousel] = useState(1)
 
   return (
     <main className="main">
@@ -398,7 +401,7 @@ const Main = () => {
       {/* <!--==================== SERVICES ====================--> */}
       <section className="services section" id="services">
         <h2 className="section__title">Services</h2>
-        <span className="section_subtitle">What I offer</span>
+        <span className="section__subtitle">What I offer</span>
 
         <div className="services__container container grid">
           {/* === SERVICES 1 === */}
@@ -559,66 +562,119 @@ const Main = () => {
       {/* <!--==================== PORTFOLIO ====================--> */}
       <section className="portfolio section" id="portfolio">
         <h2 className="section__title">Portfolio</h2>
-        <span className="section_subtitle">Some recent projects I have done</span>
+        <span className="section__subtitle">Some recent projects I have done</span>
 
         <div className="portfolio__container container">
-          <div>
-            {/* === PROJECT 1 === */}
-            <div className="portfolio__content grid">
-              <img src={ccImg} className="portfolio__img" alt="Project 1 Crane Cloud" />
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">Crane Cloud Client</h3>
-                <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
-                <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" className={`${activeCarousel === 1 ? 'active' : ''}`}></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" className={`${activeCarousel === 2 ? 'active' : ''}`}></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" className={`${activeCarousel === 3 ? 'active' : ''}`}></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" className={`${activeCarousel === 4 ? 'active' : ''}`}></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class={`carousel-item ${activeCarousel === 1 ? 'active' : ''}`}>
+                {/* === PROJECT 1 === */}
+                <div className="portfolio__content grid">
+                  <img src={ccImg} className="portfolio__img" alt="Project 1 Crane Cloud" />
+
+                  <div className="portfolio__data">
+                    <h3 className="portfolio__title">Crane Cloud Client</h3>
+                    <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
+                    <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                      Demo
+                      <i className="uil uil-arrow-right button__icon"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
+
+              <div class={`carousel-item ${activeCarousel === 2 ? 'active' : ''}`}>
+
+                {/* === PROJECT 2 === */}
+                <div className="d-block w-80 portfolio__content grid">
+                  <img src={coastImg} className="portfolio__img" alt="Project 2 Coast" />
+
+                  <div className="portfolio__data">
+                    <h3 className="portfolio__title">Coast Website</h3>
+                    <p className="portfolio__description">In this project, I was tasked to develop the website for COAST (an end-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda).</p>
+                    <a href="https://coastug.org" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                      Demo
+                      <i className="uil uil-arrow-right button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class={`carousel-item ${activeCarousel === 3 ? 'active' : ''}`}>
+                {/* === PROJECT 3 === */}
+                <div className="d-block w-80 portfolio__content grid">
+                  <img src={petsImg} className="portfolio__img" alt="Project 3 PetsInTown" />
+
+                  <div className="portfolio__data">
+                    <h3 className="portfolio__title">Online Pet Shop</h3>
+                    <p className="portfolio__description">Online pet shop and veterinary service.<br />Designed using Figma and implemented using React, Node.js, and MongoDB.<br />This is a project that I developed in a team with a friend.<br />He focused on the backend while I implemented the Frontend in React.</p>
+                    <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                      Demo
+                      <i className="uil uil-arrow-right button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class={`carousel-item ${activeCarousel === 4 ? 'active' : ''}`}>
+                {/* === PROJECT 4 === */}
+                <div className="d-block w-80 portfolio__content grid">
+                  <img src={covidImg} className="portfolio__img" alt="Project 4 Covid Tracker" />
+
+                  <div className="portfolio__data">
+                    <h3 className="portfolio__title">Covid Tracker</h3>
+                    <p className="portfolio__description">A simple project that I did during the lockdown to fetch data about COVID cases from an API and display it on a simple React app. <br />I implemented this project using React and the Axios fetching library.</p>
+                    <a href="https://stephenaraka.github.io/covid-tracker-app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                      Demo
+                      <i className="uil uil-arrow-right button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
-            {/* === PROJECT 2 === */}
-            <div className="portfolio__content grid">
-              <img src={coastImg} className="portfolio__img" alt="Project 2 Coast" />
-
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">Coast Website</h3>
-                <p className="portfolio__description">In this project, I was tasked to develop the website for COAST (an end-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda).</p>
-                <a href="https://coastug.org" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* === PROJECT 3 === */}
-            <div className="portfolio__content grid">
-              <img src={petsImg} className="portfolio__img" alt="Project 3 PetsInTown" />
-
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">Online Pet Shop</h3>
-                <p className="portfolio__description">Online pet shop and veterinary service.<br />Designed using Figma and implemented using React, Node.js, and MongoDB.<br />This is a project that I developed in a team with a friend.<br />He focused on the backend while I implemented the Frontend in React.</p>
-                <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* === PROJECT 4 === */}
-            <div className="portfolio__content grid">
-              <img src={covidImg} className="portfolio__img" alt="Project 4 Covid Tracker" />
-
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">Covid Tracker</h3>
-                <p className="portfolio__description">A simple project that I did during the lockdown to fetch data about COVID cases from an API and display it on a simple React app. <br />I implemented this project using React and the Axios fetching library.</p>
-                <a href="https://stephenaraka.github.io/covid-tracker-app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+              onClick={() => {
+                if (activeCarousel === 1) {
+                  setActiveCarousel(4)
+                  return
+                }
+                setActiveCarousel(activeCarousel - 1)
+              }}
+            >
+              <i className="uil uil-angle-left-b portfolio__modal-icon"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+              onClick={() => {
+                if (activeCarousel === 4) {
+                  setActiveCarousel(1)
+                  return
+                }
+                console.log(activeCarousel)
+                setActiveCarousel(activeCarousel + 1)
+              }}
+            >
+              <i className="uil uil-angle-right-b portfolio__modal-icon"></i>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
 
