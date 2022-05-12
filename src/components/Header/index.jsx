@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     // <!--==================== HEADER ====================-->
-    <header className="header" id="header">
+    <header className="header scroll-header" id="header">
       <nav className="container nav">
         <a href="#" className="nav__logo">Stephen</a>
 
