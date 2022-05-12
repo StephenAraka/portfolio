@@ -7,6 +7,7 @@ import ScrollToTop from './components/ScrollUp';
 
 function App() {
   const [y, setY] = useState(window.scrollY);
+  const [isDarkTheme, setIsDarkTheme] = useState(false)
 
   useEffect(() => {
     window.addEventListener("scroll", (e) => setY(window.scrollY));
@@ -15,13 +16,14 @@ function App() {
       window.removeEventListener("scroll", (e) => setY(window.scrollY));
     };
   }, [y]);
+
   return (
-    <>
-      <Header />
+    <div className={`wrapper ${isDarkTheme && 'dark-theme'}`}>
+      <Header isDark={isDarkTheme} changeTheme={() => setIsDarkTheme(!isDarkTheme)} />
       <Main />
       <Footer />
       {y >= 560 && <ScrollToTop />}
-    </>
+    </div>
   );
 }
 

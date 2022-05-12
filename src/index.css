@@ -2,12 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
-:root {
+
+.wrapper {
   --header-height: 3rem;
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 142;
+  --hue-color: 230;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
@@ -57,6 +58,21 @@
   --z-modal: 1000;
 }
 
+.wrapper.blue {
+  --hue-color: 230;
+}
+
+.wrapper.purple {
+  --hue-color: 250;
+}
+
+.wrapper.pink {
+  --hue-color: 340;
+}
+
+
+/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
@@ -71,9 +87,32 @@
 }
 
 /*========== Variables Dark theme ==========*/
-
+.wrapper.dark-theme {
+  /* HSL color mode */
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+}
 
 /*========== Button Dark/Light ==========*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
 
 
 /*==================== BASE ====================*/
@@ -116,6 +155,8 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
+  background-color: var(--body-color);
+  color: var(--text-color) !important;
 }
 
 .section__title {
@@ -862,6 +903,7 @@ img {
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
+  background-color: var(--body-color);
 }
 
 .footer__container {

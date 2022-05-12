@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ isDark, changeTheme }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -54,6 +54,8 @@ const Header = () => {
 
         {!showMenu && (
           <div className="nav__btns">
+            <i onClick={changeTheme} className={`uil ${isDark ? 'uil-moon' : 'uil-sun'} change-theme`} id="theme-button"></i>
+
             <div
               className="nav__toggle"
               id="nav-toggle"
