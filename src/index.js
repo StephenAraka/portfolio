@@ -3,13 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter  } from 'react-router-dom';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHome, faGlobe, faPhoneAlt, faEnvelope, faPhoneSquare, faFax } from '@fortawesome/free-solid-svg-icons';
-// import '@fortawesome/fontawesome-free';
+import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-library.add(faHome, faGlobe, faEnvelope, faPhoneAlt, faPhoneSquare, faFax);
 
 
 ReactDOM.render(
