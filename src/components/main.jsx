@@ -9,10 +9,8 @@ import ccImg from '../assets/img/cc.png';
 import coastImg from '../assets/img/coast.png';
 import petsImg from '../assets/img/pets.png';
 import covidImg from '../assets/img/covid.png';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react/swiper-react.js';
 
 const Main = () => {
-  const swiper = useSwiper();
   const [showSkills1, setShowSkills1] = useState(true);
   const [showSkills2, setShowSkills2] = useState(false);
   const [showSkills3, setShowSkills3] = useState(false);
