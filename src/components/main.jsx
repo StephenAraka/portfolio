@@ -91,8 +91,13 @@ const Main = () => {
             </div>
 
             <div className="about__buttons">
-              <a href="../assets/pdf/StephenAraka_resume.pdf" className='button button--flex' download="">
-                Download Resume<i className="uil uil-download-alt button__icon"></i>
+              <a
+                href="https://drive.google.com/file/d/1bOE-9hOX-fg-4jN2XtyaSom9qrv1QwVB/view?usp=sharing"
+                className='button button--flex'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See Resume<i className="uil uil-download-alt button__icon"></i>
               </a>
             </div>
           </div>
