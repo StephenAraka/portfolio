@@ -105,150 +105,150 @@ const Main = () => {
         <span className="section__subtitle">My technical level</span>
 
         <div className="skills__container containerx grid">
-            {/* === SKILLS 1 === */}
-            <div className={`skills__content ${showSkills1 ? 'skills__open' : 'skills__close'}`}>
-              <div className="skills__header" onClick={() => setShowSkills1(!showSkills1)}>
-                <i className="uil uil-brackets-curly skills__icon"></i>
+          {/* === SKILLS 1 === */}
+          <div className={`skills__content ${showSkills1 ? 'skills__open' : 'skills__close'}`}>
+            <div className="skills__header" onClick={() => setShowSkills1(!showSkills1)}>
+              <i className="uil uil-brackets-curly skills__icon"></i>
 
-                <div>
-                  <h1 className="skills__title">Frontend developer</h1>
-                  <span className="skills__subtitle">More than 4 years</span>
-                </div>
-
-                <i className="uil uil-angle-down skills__arrow"></i>
+              <div>
+                <h1 className="skills__title">Frontend developer</h1>
+                <span className="skills__subtitle">More than 4 years</span>
               </div>
 
-              <div className="skills__list grid">
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">HTML</h3>
-                    <span className="skills__number">90%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__html"></span>
-                  </div>
-                </div>
-
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">CSS</h3>
-                    <span className="skills__number">80%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__css"></span>
-                  </div>
-                </div>
-
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">JavaScript</h3>
-                    <span className="skills__number">70%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">React</h3>
-                    <span className="skills__number">90%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__react"></span>
-                  </div>
-                </div>
-
-              </div>
+              <i className="uil uil-angle-down skills__arrow"></i>
             </div>
 
-
-            {/* === SKILLS 2 === */}
-            <div className={`skills__content ${showSkills2 ? 'skills__open' : 'skills__close'}`}>
-              <div className="skills__header" onClick={() => setShowSkills2(!showSkills2)}>
-                <i className="uil uil-server-network skills__icon"></i>
-
-                <div>
-                  <h1 className="skills__title">Backend developer</h1>
-                  <span className="skills__subtitle">More than 2 years</span>
+            <div className="skills__list grid">
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">HTML</h3>
+                  <span className="skills__number">90%</span>
                 </div>
-
-                <i className="uil uil-angle-down skills__arrow"></i>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__html"></span>
+                </div>
               </div>
 
-              <div className="skills__list grid">
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">Node.js</h3>
-                    <span className="skills__number">65%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__node"></span>
-                  </div>
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">CSS</h3>
+                  <span className="skills__number">80%</span>
                 </div>
-
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">Java</h3>
-                    <span className="skills__number">50%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__java"></span>
-                  </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__css"></span>
                 </div>
-
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">Python</h3>
-                    <span className="skills__number">40%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__python"></span>
-                  </div>
-                </div>
-
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">PHP</h3>
-                    <span className="skills__number">40%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__php"></span>
-                  </div>
-                </div>
-
               </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">JavaScript</h3>
+                  <span className="skills__number">70%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__js"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">React</h3>
+                  <span className="skills__number">90%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__react"></span>
+                </div>
+              </div>
+
             </div>
-
-
-            {/* === SKILLS 2 === */}
-            <div className={`skills__content ${showSkills3 ? 'skills__open' : 'skills__close'}`}>
-              <div className="skills__header" onClick={() => setShowSkills3(!showSkills3)}>
-                <i className="uil uil-swatchbook skills__icon"></i>
-
-                <div>
-                  <h1 className="skills__title">Designer</h1>
-                  <span className="skills__subtitle">More than 2 years</span>
-                </div>
-
-                <i className="uil uil-angle-down skills__arrow"></i>
-              </div>
-
-              <div className="skills__list grid">
-                <div className="skills__data">
-                  <div className="skills__titles">
-                    <h3 className="skills__name">Figma</h3>
-                    <span className="skills__number">80%</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className="skills__percentage skills__node"></span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </div>
+
+
+          {/* === SKILLS 2 === */}
+          <div className={`skills__content ${showSkills2 ? 'skills__open' : 'skills__close'}`}>
+            <div className="skills__header" onClick={() => setShowSkills2(!showSkills2)}>
+              <i className="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h1 className="skills__title">Backend developer</h1>
+                <span className="skills__subtitle">More than 2 years</span>
+              </div>
+
+              <i className="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div className="skills__list grid">
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">Node.js</h3>
+                  <span className="skills__number">65%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__node"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">Java</h3>
+                  <span className="skills__number">50%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__java"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">Python</h3>
+                  <span className="skills__number">40%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__python"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">PHP</h3>
+                  <span className="skills__number">40%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__php"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          {/* === SKILLS 2 === */}
+          <div className={`skills__content ${showSkills3 ? 'skills__open' : 'skills__close'}`}>
+            <div className="skills__header" onClick={() => setShowSkills3(!showSkills3)}>
+              <i className="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 className="skills__title">Designer</h1>
+                <span className="skills__subtitle">More than 2 years</span>
+              </div>
+
+              <i className="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div className="skills__list grid">
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">Figma</h3>
+                  <span className="skills__number">80%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__node"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </section>
 
       {/* <!--==================== QUALIFICATION ====================--> */}

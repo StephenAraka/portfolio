@@ -1,8 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = ({ isDark, changeTheme }) => {
+const Header = ({ isDark, changeTheme, activeColor, themeColors, changeColor }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showColors, setShowColors] = useState(false);
+
+  const hexToNameCol = (hexCol) => {
+    let nameCol;
+
+    switch (hexCol) {
+      case '#576ee0':
+        nameCol = 'blue';
+        break;
+
+      case '#6e57e0':
+        nameCol = 'purple';
+        break;
+
+      case '#e05785':
+        nameCol = 'pink';
+        break;
+
+      default:
+        nameCol = 'green'
+        break;
+    }
+
+    return nameCol;
+  }
 
   return (
     // <!--==================== HEADER ====================-->
@@ -55,6 +80,23 @@ const Header = ({ isDark, changeTheme }) => {
         {!showMenu && (
           <div className="nav__btns">
             <i onClick={changeTheme} className={`uil ${isDark ? 'uil-moon' : 'uil-sun'} change-theme`} id="theme-button"></i>
+
+            <div
+              className="nav__toggle change-color"
+              onClick={() => setShowColors(!showColors)}
+            >
+              {showColors && (
+                <div className="color-buttons">
+                  {themeColors.filter(color => color !== activeColor).map(inactiveColor => (
+                    <div
+                      key={Math.random()}
+                      onClick={() => changeColor(inactiveColor)}
+                      className={`change-color-btn ${hexToNameCol(inactiveColor)}`}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
 
             <div
               className="nav__toggle"

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProfilePic = () => {
+const ProfilePic = ({ themeColor = "#57e085" }) => {
   return (
 <svg className="home__blob" width="317" height="257" viewBox="0 0 717 657" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-<rect x="50" width="667" height="657" rx="138" fill="#9CB8CC"/>
+<rect x="50" width="667" height="657" rx="138" fill={themeColor}/>
 <rect y="55" width="684.826" height="602" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
