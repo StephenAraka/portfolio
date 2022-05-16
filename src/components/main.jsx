@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
+// import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
+// import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
+import ProfilePic from '../assets/img/profile-pic.jsx';
 import aboutImg from '../assets/img/about.jpg';
 import contactImg from '../assets/img/contact.png';
 import ccImg from '../assets/img/cc.png';
