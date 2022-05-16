@@ -22,7 +22,7 @@ const Main = () => {
     <main className="main">
       {/* <!--==================== HOME ====================--> */}
       <section className="home section" id="home">
-        <div className="home__container container grid">
+        <div className="home__container containerx grid">
           <div className="home__social">
             <a href="https://www.linkedin.com/in/stephen-araka" target="_blank" className="home__social-icon">
               <i className="uil uil-linkedin-alt"></i>
@@ -65,7 +65,7 @@ const Main = () => {
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">My introduction</span>
 
-        <div className="about__container container grid">
+        <div className="about__container containerx grid">
           <img src={aboutImg} alt="about" className="about__img" />
 
           <div className="about__data">
@@ -104,7 +104,7 @@ const Main = () => {
         <h2 className="section__title">Skills</h2>
         <span className="section__subtitle">My technical level</span>
 
-        <div className="skills__container container grid">
+        <div className="skills__container containerx grid">
           <div>
 
             {/* === SKILLS 1 === */}
@@ -404,7 +404,7 @@ const Main = () => {
         <h2 className="section__title">Services</h2>
         <span className="section__subtitle">What I offer</span>
 
-        <div className="services__container container grid">
+        <div className="services__container containerx grid">
           {/* === SERVICES 1 === */}
           <div className="services__content">
             <div>
@@ -644,7 +644,7 @@ const Main = () => {
             </div>
 
             <a
-              class="carousel-control-prev"
+              class="carousel-control-prev swiper-button-prev"
               href="#carouselExampleControls"
               role="button"
               data-slide="prev"
@@ -660,7 +660,7 @@ const Main = () => {
               <span class="sr-only">Previous</span>
             </a>
             <a
-              class="carousel-control-next"
+              class="carousel-control-next swiper-button-next"
               href="#carouselExampleControls"
               role="button"
               data-slide="next"
@@ -707,7 +707,7 @@ const Main = () => {
       <section className="contact section" id="contact">
         <h2 className="section__title">Contact Me</h2>
         <span className="section__subtitle">Get In Touch</span>
-        <div className="contact__container container grid">
+        <div className="contact__container containerx grid">
           <div>
             <div className="contact__information">
               <i className="uil uil-phone contact__icon"></i>
@@ -744,16 +744,16 @@ const Main = () => {
                 <label htmlFor="" className="contact__label">Email</label>
                 <input type="email" className="contact__input" />
               </div>
-              <div className="contact__content">
-                <label htmlFor="" className="contact__label">Message</label>
-                <textarea name="" id="" cols="0" rows="7" className="contact__input" />
-              </div>
+            </div>
+            <div className="contact__content">
+              <label htmlFor="" className="contact__label">Message</label>
+              <textarea name="" id="" cols="0" rows="7" className="contact__input" />
+            </div>
 
-              <div>
-                <a href="" className="button button--flex">
-                  Send Message <i className="uil uil-message button__icon"></i>
-                </a>
-              </div>
+            <div>
+              <a href="" className="button button--flex">
+                Send Message <i className="uil uil-message button__icon"></i>
+              </a>
             </div>
           </form>
         </div>

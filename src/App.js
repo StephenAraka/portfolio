@@ -18,7 +18,7 @@ function App() {
   }, [y]);
 
   return (
-    <div className={`wrapper ${isDarkTheme && 'dark-theme'}`}>
+    <div className={`wrapper${isDarkTheme ? ' dark-theme' : ''}`}>
       <Header isDark={isDarkTheme} changeTheme={() => setIsDarkTheme(!isDarkTheme)} />
       <Main />
       <Footer />
