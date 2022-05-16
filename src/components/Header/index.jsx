@@ -82,7 +82,7 @@ const Header = ({ isDark, changeTheme, activeColor, themeColors, changeColor }) 
             <i onClick={changeTheme} className={`uil ${isDark ? 'uil-moon' : 'uil-sun'} change-theme`} id="theme-button"></i>
 
             <div
-              className="nav__toggle change-color"
+              className="change-color"
               onClick={() => setShowColors(!showColors)}
             >
               {showColors && (
