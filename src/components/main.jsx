@@ -105,8 +105,6 @@ const Main = () => {
         <span className="section__subtitle">My technical level</span>
 
         <div className="skills__container containerx grid">
-          <div>
-
             {/* === SKILLS 1 === */}
             <div className={`skills__content ${showSkills1 ? 'skills__open' : 'skills__close'}`}>
               <div className="skills__header" onClick={() => setShowSkills1(!showSkills1)}>
@@ -250,10 +248,7 @@ const Main = () => {
               </div>
             </div>
 
-
-
           </div>
-        </div>
       </section>
 
       {/* <!--==================== QUALIFICATION ====================--> */}
@@ -595,7 +590,7 @@ const Main = () => {
               <div class={`carousel-item ${activeCarousel === 2 ? 'active' : ''}`}>
 
                 {/* === PROJECT 2 === */}
-                <div className="d-block w-80 portfolio__content grid">
+                <div className="portfolio__content grid">
                   <img src={coastImg} className="portfolio__img" alt="Project 2 Coast" />
 
                   <div className="portfolio__data">
@@ -611,7 +606,7 @@ const Main = () => {
 
               <div class={`carousel-item ${activeCarousel === 3 ? 'active' : ''}`}>
                 {/* === PROJECT 3 === */}
-                <div className="d-block w-80 portfolio__content grid">
+                <div className="portfolio__content grid">
                   <img src={petsImg} className="portfolio__img" alt="Project 3 PetsInTown" />
 
                   <div className="portfolio__data">
@@ -627,7 +622,7 @@ const Main = () => {
 
               <div class={`carousel-item ${activeCarousel === 4 ? 'active' : ''}`}>
                 {/* === PROJECT 4 === */}
-                <div className="d-block w-80 portfolio__content grid">
+                <div className="portfolio__content grid">
                   <img src={covidImg} className="portfolio__img" alt="Project 4 Covid Tracker" />
 
                   <div className="portfolio__data">
