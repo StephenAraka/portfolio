@@ -57,7 +57,7 @@ function App() {
         isDark={isDarkTheme}
         changeTheme={() => setIsDarkTheme(!isDarkTheme)}
       />
-      <Main />
+      <Main themeColor={themeColor} />
       <Footer />
       {y >= 560 && <ScrollToTop />}
     </div>
