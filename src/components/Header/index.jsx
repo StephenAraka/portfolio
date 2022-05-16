@@ -7,7 +7,7 @@ const Header = ({ isDark, changeTheme }) => {
   return (
     // <!--==================== HEADER ====================-->
     <header className="header scroll-header" id="header">
-      <nav className="container nav">
+      <nav className="containerx nav">
         <a href="#" className="nav__logo">Stephen</a>
 
         <div className={`nav__menu ${(showMenu ? 'show-menu' : '')}`} id="nav-menu">

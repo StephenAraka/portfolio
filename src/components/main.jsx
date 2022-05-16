@@ -45,7 +45,7 @@ const Main = () => {
             <h1 className="home__title">Hi, I'm Stephen</h1>
             <h3 className="home__subtitle">Software Engineer</h3>
             <p className="home__description">
-              Computer scientist with three years of extensive experience in software development. Designs, creates, and maintains software products for companies and to enhance business operations. Contributed as a front-end engineer in building a cloud-native tool to save locally based African developers over 40% in bandwidth usage for deploying applications. Seeking an opportunity to apply skills and expand expertise in Software and DevOps engineering while assisting companies to meet business goals and be future proof.
+              Computer scientist with three years of extensive experience in software development. Designs, creates, and maintains software products for companies and to enhance business operations.
             </p>
             <a href="#contact" className="button button--flex">
               Contact Me <i className="uil uil-message button__icon"></i>

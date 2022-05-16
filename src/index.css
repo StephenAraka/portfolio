@@ -115,6 +115,7 @@ html {
   color: var(--title-color);
   margin-right: var(--mb-1);
   cursor: pointer;
+  justify-self: center;
 }
 
 .change-theme:hover {
@@ -249,6 +250,7 @@ img {
 .nav__list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin-bottom: -.5rem;
 }
 
 .nav__link {
@@ -1024,6 +1026,10 @@ img {
   .home__content {
     grid-template-columns: .25fr 3fr;
   }
+  
+  .home__social {
+    align-content: center;
+  }
 
   .home__blob {
     width: 180px;
@@ -1052,6 +1058,12 @@ img {
 
   .project__img {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .home__social {
+    align-content: center;
   }
 }
 
@@ -1093,6 +1105,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .home__container {
+    padding-top: 6rem;
+  }
+
   .containerx{
     margin-left: auto;
     margin-right: auto;
@@ -1159,11 +1175,13 @@ img {
   }
 
   .home__scroll {
-    display: block;
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
   }
 
   .home__scroll-button {
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
   }
 
   .about__container {
