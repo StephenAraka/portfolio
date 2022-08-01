@@ -4,10 +4,17 @@ import Header from './components/Header';
 import './assets/css/App.css';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollUp';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-YBLMVJFY33";
+ReactGA.initialize(TRACKING_ID);
 
 const themeColors = ['#57e085', '#576ee0', '#6e57e0', '#e05785'];
 
 function App() {
+
+  console.log(window.location.pathname + window.location.search)
+
   const [y, setY] = useState(window.scrollY);
   const [themeColor, setThemeColor] = useState('#6e57e0');
   const [isDarkTheme, setIsDarkTheme] = useState(true)

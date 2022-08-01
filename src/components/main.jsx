@@ -9,8 +9,12 @@ import ccImg from '../assets/img/cc.png';
 import coastImg from '../assets/img/coast.png';
 import petsImg from '../assets/img/pets.png';
 import covidImg from '../assets/img/covid.png';
+import useAnalyticsEventTracker from '../useAnalyticsEventTracker';
 
 const Main = () => {
+  const gaEventTracker = useAnalyticsEventTracker('Contact us');
+
+
   const [showSkills1, setShowSkills1] = useState(true);
   const [showSkills2, setShowSkills2] = useState(false);
   const [showSkills3, setShowSkills3] = useState(false);
@@ -24,13 +28,13 @@ const Main = () => {
       <section className="home section" id="home">
         <div className="home__container containerx grid">
           <div className="home__social">
-            <a href="https://www.linkedin.com/in/stephen-araka" target="_blank" className="home__social-icon">
+            <a href="https://www.linkedin.com/in/stephen-araka" target="_blank" className="home__social-icon" onClick={() => gaEventTracker('linkedin link')}>
               <i className="uil uil-linkedin-alt"></i>
             </a>
-            <a href="https://github.com/StephenAraka" target="_blank" className="home__social-icon">
+            <a href="https://github.com/StephenAraka" target="_blank" className="home__social-icon" onClick={() => gaEventTracker('github link')}>
               <i className="uil uil-github-alt"></i>
             </a>
-            <a href="https://twitter.com/StivoAraka" target="_blank" className="home__social-icon">
+            <a href="https://twitter.com/StivoAraka" target="_blank" className="home__social-icon" onClick={() => gaEventTracker('twitter link')}>
               <i className="uil uil-twitter-alt"></i>
             </a>
           </div>
@@ -45,14 +49,14 @@ const Main = () => {
             <p className="home__description">
               Computer scientist with three years of extensive experience in software development. Designs, creates, and maintains software products for companies and to enhance business operations.
             </p>
-            <a href="#contact" className="button button--flex">
+            <a href="#contact" className="button button--flex" onClick={() => gaEventTracker('Contact')}>
               Contact Me <i className="uil uil-message button__icon"></i>
             </a>
           </div>
         </div>
 
         <div className="home__scroll">
-          <a href="#about" className="home__scroll-button button--flex">
+          <a href="#about" className="home__scroll-button button--flex" onClick={() => gaEventTracker('Scroll')}>
             <i className="uil uil-mouse-alt home__scroll-mouse"></i>
             <span className="home__scroll-name">Scroll down</span>
             <i className="uil uil-arrow-down home__scroll-arrow"></i>
@@ -584,7 +588,7 @@ const Main = () => {
                   <div className="portfolio__data">
                     <h3 className="portfolio__title">Crane Cloud Client</h3>
                     <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
-                    <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                    <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button" onClick={() => gaEventTracker('Crane Cloud Demo')}>
                       Demo
                       <i className="uil uil-arrow-right button__icon"></i>
                     </a>
@@ -601,7 +605,7 @@ const Main = () => {
                   <div className="portfolio__data">
                     <h3 className="portfolio__title">Coast Website</h3>
                     <p className="portfolio__description">In this project, I was tasked to develop the website for COAST (an end-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda).</p>
-                    <a href="https://coastug.org" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                    <a href="https://coastug.org" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button" onClick={() => gaEventTracker('Coast Demo')}>
                       Demo
                       <i className="uil uil-arrow-right button__icon"></i>
                     </a>
@@ -617,7 +621,7 @@ const Main = () => {
                   <div className="portfolio__data">
                     <h3 className="portfolio__title">Online Pet Shop</h3>
                     <p className="portfolio__description">Online pet shop and veterinary service.<br />Designed using Figma and implemented using React, Node.js, and MongoDB.<br />This is a project that I developed in a team with a friend.<br />He focused on the backend while I implemented the Frontend in React.</p>
-                    <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                    <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button" onClick={() => gaEventTracker('Petshop Demo')}>
                       Demo
                       <i className="uil uil-arrow-right button__icon"></i>
                     </a>
@@ -633,7 +637,7 @@ const Main = () => {
                   <div className="portfolio__data">
                     <h3 className="portfolio__title">Covid Tracker</h3>
                     <p className="portfolio__description">A simple project that I did during the lockdown to fetch data about COVID cases from an API and display it on a simple React app. <br />I implemented this project using React and the Axios fetching library.</p>
-                    <a href="https://stephenaraka.github.io/covid-tracker-app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                    <a href="https://stephenaraka.github.io/covid-tracker-app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button" onClick={() => gaEventTracker('COVID tracker')}>
                       Demo
                       <i className="uil uil-arrow-right button__icon"></i>
                     </a>
@@ -688,7 +692,7 @@ const Main = () => {
             <div className="project__data">
               <h2 className="project__title">Have a project we can work on?</h2>
               <p className="project__description">Contact me now and let us talk about it!</p>
-              <a href="#contact" className="button button--flex button--white">
+              <a href="#contact" className="button button--flex button--white" onClick={() => gaEventTracker('Contact Me')}>
                 Contact Me
                 <i className="uil uil-message project__icon button__icon"></i>
               </a>
@@ -751,7 +755,7 @@ const Main = () => {
             </div>
 
             <div>
-              <a href="" className="button button--flex">
+              <a href="" className="button button--flex" onClick={() => gaEventTracker('Send Message')}>
                 Send Message <i className="uil uil-message button__icon"></i>
               </a>
             </div>
