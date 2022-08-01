@@ -18,13 +18,13 @@ const Footer = () => (
         </ul>
 
         <div className="footer__socials">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer__social">
-            <i className="uil uil-facebook-f"></i>
+          <a href="https://www.linkedin.com/in/stephen-araka" target="_blank" rel="noopener noreferrer" className="footer__social">
+            <i className="uil uil-linkedin-alt"></i>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer__social">
-            <i className="uil uil-instagram"></i>
+          <a href="https://github.com/StephenAraka" target="_blank" rel="noopener noreferrer" className="footer__social">
+            <i className="uil uil-github-alt"></i>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer__social">
+          <a href="https://twitter.com/StivoAraka" target="_blank" rel="noopener noreferrer" className="footer__social">
             <i className="uil uil-twitter-alt"></i>
           </a>
         </div>
