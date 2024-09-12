@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0b697c80.chunk.css",
-    "main.js": "/portfolio/static/js/main.09a34cfb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.09a34cfb.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.1421c083.chunk.css",
+    "main.js": "/portfolio/static/js/main.cd2e686c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cd2e686c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.aa1db941.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.aa1db941.js.map",
-    "static/css/2.83cb0c3b.chunk.css": "/portfolio/static/css/2.83cb0c3b.chunk.css",
-    "static/js/2.8d7e57e9.chunk.js": "/portfolio/static/js/2.8d7e57e9.chunk.js",
-    "static/js/2.8d7e57e9.chunk.js.map": "/portfolio/static/js/2.8d7e57e9.chunk.js.map",
+    "static/css/2.c16044e5.chunk.css": "/portfolio/static/css/2.c16044e5.chunk.css",
+    "static/js/2.24efdb92.chunk.js": "/portfolio/static/js/2.24efdb92.chunk.js",
+    "static/js/2.24efdb92.chunk.js.map": "/portfolio/static/js/2.24efdb92.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.67417136c8bd43516f20dc7bb6e87266.js": "/portfolio/precache-manifest.67417136c8bd43516f20dc7bb6e87266.js",
+    "precache-manifest.a94465e58ffea944687b3306fbd6357b.js": "/portfolio/precache-manifest.a94465e58ffea944687b3306fbd6357b.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/2.83cb0c3b.chunk.css.map": "/portfolio/static/css/2.83cb0c3b.chunk.css.map",
-    "static/css/main.0b697c80.chunk.css.map": "/portfolio/static/css/main.0b697c80.chunk.css.map",
+    "static/css/2.c16044e5.chunk.css.map": "/portfolio/static/css/2.c16044e5.chunk.css.map",
+    "static/css/main.1421c083.chunk.css.map": "/portfolio/static/css/main.1421c083.chunk.css.map",
     "static/media/about.jpg": "/portfolio/static/media/about.be144b81.jpg",
     "static/media/cc.png": "/portfolio/static/media/cc.59a1d9d9.png",
     "static/media/coast.png": "/portfolio/static/media/coast.a01a8ae7.png",
@@ -22,9 +22,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.aa1db941.js",
-    "static/css/2.83cb0c3b.chunk.css",
-    "static/js/2.8d7e57e9.chunk.js",
-    "static/css/main.0b697c80.chunk.css",
-    "static/js/main.09a34cfb.chunk.js"
+    "static/css/2.c16044e5.chunk.css",
+    "static/js/2.24efdb92.chunk.js",
+    "static/css/main.1421c083.chunk.css",
+    "static/js/main.cd2e686c.chunk.js"
   ]
 }
