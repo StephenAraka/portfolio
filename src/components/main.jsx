@@ -12,9 +12,9 @@ import covidImg from '../assets/img/covid.png';
 
 const Main = () => {
   const [showSkills1, setShowSkills1] = useState(true);
-  const [showSkills2, setShowSkills2] = useState(false);
-  const [showSkills3, setShowSkills3] = useState(false);
-  const [isEducation, setIsEducation] = useState(true);
+  const [showSkills2, setShowSkills2] = useState(true);
+  const [showSkills3, setShowSkills3] = useState(true);
+  const [isEducation, setIsEducation] = useState(false);
   const [showModal, setShowModal] = useState('');
   const [activeCarousel, setActiveCarousel] = useState(1)
 
@@ -63,19 +63,19 @@ const Main = () => {
       {/* <!--==================== ABOUT ====================--> */}
       <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
-        <span className="section__subtitle">My introduction</span>
+        <span className="section__subtitle"></span>
 
         <div className="about__container containerx grid">
           <img src={aboutImg} alt="about" className="about__img" />
 
           <div className="about__data">
             <p className="about__description">
-              Contributed as a front-end engineer in building a cloud-native tool to save locally based African developers over 40% in bandwidth usage for deploying applications. Seeking an opportunity to apply skills and expand expertise in Software and DevOps engineering while assisting companies to meet business goals and be future proof.
+              Contributed as a front-end engineer in building a cloud-native tool to save locally based African developers over 40% in bandwidth usage for deploying applications. Seeking an opportunity to apply skills and expand expertise in Software Engineering and DevOps while assisting companies to meet business goals and be future proof.
             </p>
 
             <div className="about__info">
               <div>
-                <span className="about__info-title">03+</span>
+                <span className="about__info-title">05+</span>
                 <span className="about__info-name">Years <br /> experience</span>
               </div>
 
@@ -119,6 +119,27 @@ const Main = () => {
             </div>
 
             <div className="skills__list grid">
+
+            <div className="skills__data">
+              <div className="skills__titles">
+                <h3 className="skills__name">React</h3>
+                <span className="skills__number">90%</span>
+              </div>
+              <div className="skills__bar">
+                <span className="skills__percentage skills__react"></span>
+              </div>
+            </div>
+
+            <div className="skills__data">
+              <div className="skills__titles">
+                <h3 className="skills__name">React Native</h3>
+                <span className="skills__number">90%</span>
+              </div>
+              <div className="skills__bar">
+                <span className="skills__percentage skills__react"></span>
+              </div>
+            </div>
+
               <div className="skills__data">
                 <div className="skills__titles">
                   <h3 className="skills__name">HTML</h3>
@@ -146,16 +167,6 @@ const Main = () => {
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage skills__js"></span>
-                </div>
-              </div>
-
-              <div className="skills__data">
-                <div className="skills__titles">
-                  <h3 className="skills__name">React</h3>
-                  <span className="skills__number">90%</span>
-                </div>
-                <div className="skills__bar">
-                  <span className="skills__percentage skills__react"></span>
                 </div>
               </div>
 
@@ -227,7 +238,7 @@ const Main = () => {
               <i className="uil uil-swatchbook skills__icon"></i>
 
               <div>
-                <h1 className="skills__title">Designer</h1>
+                <h1 className="skills__title">UX Design</h1>
                 <span className="skills__subtitle">More than 2 years</span>
               </div>
 
@@ -257,13 +268,6 @@ const Main = () => {
         <span className="section__subtitle">My professional journey</span>
         <div className="qualification__container container">
           <div className="qualification__tabs">
-            <div
-              className={`qualification__button button--flex ${isEducation ? 'qualification__active' : ''}`}
-              onClick={() => setIsEducation(!isEducation)}
-            >
-              <i className="uil uil-graduation-cap qualification__icon"></i>
-              Education
-            </div>
 
             <div
               className={`qualification__button button--flex ${isEducation ? '' : 'qualification__active'}`}
@@ -271,6 +275,14 @@ const Main = () => {
             >
               <i className="uil uil-briefcase-alt qualification__icon"></i>
               Work
+            </div>
+
+            <div
+              className={`qualification__button button--flex ${isEducation ? 'qualification__active' : ''}`}
+              onClick={() => setIsEducation(!isEducation)}
+            >
+              <i className="uil uil-graduation-cap qualification__icon"></i>
+              Education
             </div>
           </div>
 
@@ -280,12 +292,13 @@ const Main = () => {
 
               {/* === QUALIFICATION 1 === */}
               <div className="qualification__data">
+
                 <div>
-                  <h3 className="qualification__title">Computer Science</h3>
-                  <span className="qualification__subtitle">Makerere University - Uganda</span>
+                  <h3 className="qualification__title">Msc. IT - Software Engineering</h3>
+                  <span className="qualification__subtitle">Carnegie Mellon University - Africa</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2016 - 2019
+                    2020 - 2022
                   </div>
                 </div>
 
@@ -305,13 +318,14 @@ const Main = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">Msc. IT</h3>
-                  <span className="qualification__subtitle">Carnegie Mellon University - Africa</span>
+                  <h3 className="qualification__title">Computer Science</h3>
+                  <span className="qualification__subtitle">Makerere University - Uganda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2020 - 2022
+                    2016 - 2019
                   </div>
                 </div>
+                
               </div>
             </div>
 
@@ -321,11 +335,11 @@ const Main = () => {
               {/* === QUALIFICATION 1 === */}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">Developer Consultant</h3>
-                  <span className="qualification__subtitle">Flock Of Birds - Uganda</span>
+                  <h3 className="qualification__title">Fullstack Software Engineer</h3>
+                  <span className="qualification__subtitle">atlasGO - San Fransisco, US <br /> teroGO - Belgium</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2018 - 2019
+                    2022 - 2024
                   </div>
                 </div>
 
@@ -334,7 +348,7 @@ const Main = () => {
                   <span className="qualification__line"></span>
                 </div>
               </div>
-
+              
               {/* === QUALIFICATION 2 === */}
               <div className="qualification__data">
                 <div></div>
@@ -345,20 +359,20 @@ const Main = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">Software Engineer</h3>
-                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <h3 className="qualification__title">Frontend Engineer</h3>
+                  <span className="qualification__subtitle">Jumia - Kenya</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2019 - 2021
+                    2022 - 2023
                   </div>
                 </div>
               </div>
-
+              
               {/* === QUALIFICATION 3 === */}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">DevOps Engineer</h3>
-                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <h3 className="qualification__title">Graduate Teaching Assistant</h3>
+                  <span className="qualification__subtitle">Carnegie Mellon University - Rwanda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
                     2021 - 2022
@@ -371,7 +385,7 @@ const Main = () => {
                 </div>
               </div>
 
-              {/* === QUALIFICATION 2 === */}
+              {/* === QUALIFICATION 4 === */}
               <div className="qualification__data">
                 <div></div>
 
@@ -381,11 +395,47 @@ const Main = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">Graduate Teaching Assistant</h3>
-                  <span className="qualification__subtitle">Carnegie Mellon University - Africa</span>
+                  <h3 className="qualification__title">DevOps Engineer</h3>
+                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2021 - Present
+                    2021 - 2022
+                  </div>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 5 === */}
+              <div className="qualification__data">
+              <div>
+                  <h3 className="qualification__title">Software Engineer</h3>
+                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2019 - 2021
+                  </div>
+                </div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 6 === */}
+              <div className="qualification__data">
+                <div></div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 className="qualification__title">Developer Consultant</h3>
+                  <span className="qualification__subtitle">Flock Of Birds - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2018 - 2019
                   </div>
                 </div>
               </div>
