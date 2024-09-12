@@ -43,7 +43,7 @@ const Main = () => {
             <h1 className="home__title">Hi, I'm Stephen</h1>
             <h3 className="home__subtitle">Software Engineer</h3>
             <p className="home__description">
-              Computer scientist with three years of extensive experience in software development. Designs, creates, and maintains software products for companies and to enhance business operations.
+              I am a Software Engineer with over five years of extensive experience in software development. I design, create, and maintain software products for companies to enhance their business operations.
             </p>
             <a href="#contact" className="button button--flex">
               Contact Me <i className="uil uil-message button__icon"></i>
@@ -708,7 +708,7 @@ const Main = () => {
               <i className="uil uil-phone contact__icon"></i>
               <div>
                 <h3 className="contact__title">Call Me</h3>
-                <span className="contact__subtitle">256-752-908-457</span>
+                <span className="contact__subtitle">+254-792-485-814</span>
               </div>
             </div>
 
@@ -724,7 +724,7 @@ const Main = () => {
               <i className="uil uil-map-marker contact__icon"></i>
               <div>
                 <h3 className="contact__title">Current Location</h3>
-                <span className="contact__subtitle">Kigali - Rwanda</span>
+                <span className="contact__subtitle">Nairobi - Kenya</span>
               </div>
             </div>
           </div>
