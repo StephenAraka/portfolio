@@ -568,6 +568,45 @@ const Main = () => {
           <div className="services__content">
             <div>
               <i className="uil uil-web-grid services__icon"></i>
+              <h3 className="services__title">Mobile <br /> Engineer</h3>
+            </div>
+
+            <span
+              className="button button--flex button--small button--link services__button"
+              onClick={() => setShowModal('mobile')}
+            >
+              View More
+              <i className="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div className={`services__modal ${showModal === 'mobile' && 'active-modal'}`}>
+              <div className="services__modal-content">
+                <h4 className="services__modal-title">Mobile <br /> Engineer</h4>
+                <i className="uil uil-times services__modal-close" onClick={() => setShowModal('')}></i>
+
+                <ul className="services__modal-services grid">
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    I develop cross-platform mobile applications with a single codebase, ensuring smooth functionality on both iOS and Android.
+
+                  </li>
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    I implement responsive and visually appealing user interfaces, optimizing performance and user experience.
+                  </li>
+                  <li className="services__modal-service">
+                    <i className="uil uil-check-circle services__modal-icon"></i>
+                    I integrate APIs and backend services, handling data synchronization and real-time updates across mobile platforms.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* === SERVICES 5 === */}
+          <div className="services__content">
+            <div>
+              <i className="uil uil-web-grid services__icon"></i>
               <h3 className="services__title">DevOps <br /> Engineer</h3>
             </div>
 
@@ -591,11 +630,11 @@ const Main = () => {
                   </li>
                   <li className="services__modal-service">
                     <i className="uil uil-check-circle services__modal-icon"></i>
-                    Currently learning
+                    Currently learning 📖
                   </li>
                   <li className="services__modal-service">
                     <i className="uil uil-check-circle services__modal-icon"></i>
-                    Soon transitioning to DevOps
+                    Soon transitioning to DevOps ⏳
                   </li>
                 </ul>
               </div>
@@ -627,7 +666,7 @@ const Main = () => {
                   <img src={ccImg} className="portfolio__img" alt="Project 1 Crane Cloud" />
 
                   <div className="portfolio__data">
-                    <h3 className="portfolio__title">Crane Cloud Client</h3>
+                    <h3 className="portfolio__title">Crane Cloud Web Client</h3>
                     <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
                     <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
                       Demo
