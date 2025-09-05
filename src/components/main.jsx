@@ -18,6 +18,48 @@ const Main = () => {
   const [showSkills4, setShowSkills4] = useState(true);
   const [isEducation, setIsEducation] = useState(false);
   const [showModal, setShowModal] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('');
+
+    try {
+      const response = await fetch('https://formspree.io/f/mkgvplyd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <main className="main">
@@ -880,26 +922,68 @@ const Main = () => {
             </div>
           </div>
 
-          <form action="" className='contact__form grid'>
+          <form onSubmit={handleSubmit} className='contact__form grid'>
             <div className="contact__inputs grid">
               <div className="contact__content">
-                <label htmlFor="" className="contact__label">Name</label>
-                <input type="text" className="contact__input" />
+                <label htmlFor="name" className="contact__label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  className="contact__input"
+                  required
+                />
               </div>
               <div className="contact__content">
-                <label htmlFor="" className="contact__label">Email</label>
-                <input type="email" className="contact__input" />
+                <label htmlFor="email" className="contact__label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="contact__input"
+                  required
+                />
               </div>
             </div>
             <div className="contact__content">
-              <label htmlFor="" className="contact__label">Message</label>
-              <textarea name="" id="" cols="0" rows="7" className="contact__input" />
+              <label htmlFor="message" className="contact__label">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="0"
+                rows="7"
+                value={formData.message}
+                onChange={handleInputChange}
+                className="contact__input"
+                required
+              />
             </div>
 
+            {submitStatus === 'success' && (
+              <div className="contact__success">
+                <p>✅ Message sent successfully! I'll get back to you soon.</p>
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="contact__error">
+                <p>❌ Failed to send message. Please try again or email me directly.</p>
+              </div>
+            )}
+
             <div>
-              <a href="" className="button button--flex">
-                Send Message <i className="uil uil-message button__icon"></i>
-              </a>
+              <button
+                type="submit"
+                className="button button--flex"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+                <i className="uil uil-message button__icon"></i>
+              </button>
             </div>
           </form>
         </div>
