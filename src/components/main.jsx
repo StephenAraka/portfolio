@@ -6,17 +6,18 @@ import ProfilePic from '../assets/img/profile-pic.jsx';
 import aboutImg from '../assets/img/about.jpg';
 import contactImg from '../assets/img/contact.png';
 import ccImg from '../assets/img/cc.png';
-import coastImg from '../assets/img/coast.png';
 import petsImg from '../assets/img/pets.png';
-import covidImg from '../assets/img/covid.png';
+import zuriImg from '../assets/img/zuri.png';
+import smartBuildImg from '../assets/img/smart-build.png';
+import expoImg from '../assets/img/expo.webp';
 
 const Main = () => {
   const [showSkills1, setShowSkills1] = useState(true);
   const [showSkills2, setShowSkills2] = useState(true);
   const [showSkills3, setShowSkills3] = useState(true);
+  const [showSkills4, setShowSkills4] = useState(true);
   const [isEducation, setIsEducation] = useState(false);
   const [showModal, setShowModal] = useState('');
-  const [activeCarousel, setActiveCarousel] = useState(1)
 
   return (
     <main className="main">
@@ -43,7 +44,7 @@ const Main = () => {
             <h1 className="home__title">Hi, I'm Stephen</h1>
             <h3 className="home__subtitle">Software Engineer</h3>
             <p className="home__description">
-              I am a Software Engineer with over five years of extensive experience in software development. I design, create, and maintain software products for companies to enhance their business operations.
+              I am a Software Engineer with over six years of extensive experience in software development. I design, create, and maintain software products for companies to enhance their business operations.
             </p>
             <a href="#contact" className="button button--flex">
               Contact Me <i className="uil uil-message button__icon"></i>
@@ -75,17 +76,17 @@ const Main = () => {
 
             <div className="about__info">
               <div>
-                <span className="about__info-title">05+</span>
+                <span className="about__info-title">06+</span>
                 <span className="about__info-name">Years <br /> experience</span>
               </div>
 
               <div>
-                <span className="about__info-title">10+</span>
+                <span className="about__info-title">15+</span>
                 <span className="about__info-name">Completed <br /> projects</span>
               </div>
 
               <div>
-                <span className="about__info-title">03+</span>
+                <span className="about__info-title">04+</span>
                 <span className="about__info-name">Companies <br /> worked at</span>
               </div>
             </div>
@@ -105,9 +106,85 @@ const Main = () => {
         <span className="section__subtitle">My technical level</span>
 
         <div className="skills__container containerx grid">
-          {/* === SKILLS 1 === */}
+          {/* === SKILLS 1 - MOBILE === */}
           <div className={`skills__content ${showSkills1 ? 'skills__open' : 'skills__close'}`}>
             <div className="skills__header" onClick={() => setShowSkills1(!showSkills1)}>
+              <i className="uil uil-mobile-android skills__icon"></i>
+
+              <div>
+                <h1 className="skills__title">Mobile Engineer</h1>
+                <span className="skills__subtitle">More than 3 years</span>
+              </div>
+
+              <i className="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div className="skills__list grid">
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">React Native (Expo)</h3>
+                  <span className="skills__number">90%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__react"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">React Native CLI</h3>
+                  <span className="skills__number">85%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__react"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">TypeScript</h3>
+                  <span className="skills__number">80%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__css"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">Redux/Zustand</h3>
+                  <span className="skills__number">85%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__react"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">Native Modules</h3>
+                  <span className="skills__number">70%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__js"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">App Store Deployment</h3>
+                  <span className="skills__number">75%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__js"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* === SKILLS 2 - FRONTEND === */}
+          <div className={`skills__content ${showSkills2 ? 'skills__open' : 'skills__close'}`}>
+            <div className="skills__header" onClick={() => setShowSkills2(!showSkills2)}>
               <i className="uil uil-brackets-curly skills__icon"></i>
 
               <div>
@@ -174,9 +251,9 @@ const Main = () => {
           </div>
 
 
-          {/* === SKILLS 2 === */}
-          <div className={`skills__content ${showSkills2 ? 'skills__open' : 'skills__close'}`}>
-            <div className="skills__header" onClick={() => setShowSkills2(!showSkills2)}>
+          {/* === SKILLS 3 - BACKEND === */}
+          <div className={`skills__content ${showSkills3 ? 'skills__open' : 'skills__close'}`}>
+            <div className="skills__header" onClick={() => setShowSkills3(!showSkills3)}>
               <i className="uil uil-server-network skills__icon"></i>
 
               <div>
@@ -232,9 +309,9 @@ const Main = () => {
           </div>
 
 
-          {/* === SKILLS 2 === */}
-          <div className={`skills__content ${showSkills3 ? 'skills__open' : 'skills__close'}`}>
-            <div className="skills__header" onClick={() => setShowSkills3(!showSkills3)}>
+          {/* === SKILLS 4 - UX DESIGN === */}
+          <div className={`skills__content ${showSkills4 ? 'skills__open' : 'skills__close'}`}>
+            <div className="skills__header" onClick={() => setShowSkills4(!showSkills4)}>
               <i className="uil uil-swatchbook skills__icon"></i>
 
               <div>
@@ -335,11 +412,11 @@ const Main = () => {
               {/* === QUALIFICATION 1 === */}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">Fullstack Software Engineer</h3>
-                  <span className="qualification__subtitle">atlasGO - San Fransisco, US <br /> teroGO - Belgium</span>
+                  <h3 className="qualification__title">Mobile Software Engineer II</h3>
+                  <span className="qualification__subtitle">Jumba - Kenya</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2022 - 2024
+                    June 2025 - Present
                   </div>
                 </div>
 
@@ -348,7 +425,7 @@ const Main = () => {
                   <span className="qualification__line"></span>
                 </div>
               </div>
-              
+
               {/* === QUALIFICATION 2 === */}
               <div className="qualification__data">
                 <div></div>
@@ -359,11 +436,11 @@ const Main = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">Frontend Engineer</h3>
-                  <span className="qualification__subtitle">Jumia - Kenya</span>
+                  <h3 className="qualification__title">Fullstack Software Engineer</h3>
+                  <span className="qualification__subtitle">atlasGO - San Fransisco, US <br /> teroGO - Belgium</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2022 - 2023
+                    2022 - 2024
                   </div>
                 </div>
               </div>
@@ -371,11 +448,11 @@ const Main = () => {
               {/* === QUALIFICATION 3 === */}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">Graduate Teaching Assistant</h3>
-                  <span className="qualification__subtitle">Carnegie Mellon University - Rwanda</span>
+                  <h3 className="qualification__title">Frontend Engineer</h3>
+                  <span className="qualification__subtitle">Jumia - Kenya</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2021 - 2022
+                    2022 - 2023
                   </div>
                 </div>
 
@@ -384,7 +461,7 @@ const Main = () => {
                   <span className="qualification__line"></span>
                 </div>
               </div>
-
+              
               {/* === QUALIFICATION 4 === */}
               <div className="qualification__data">
                 <div></div>
@@ -395,8 +472,8 @@ const Main = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">DevOps Engineer</h3>
-                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <h3 className="qualification__title">Graduate Teaching Assistant</h3>
+                  <span className="qualification__subtitle">Carnegie Mellon University - Rwanda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
                     2021 - 2022
@@ -406,12 +483,12 @@ const Main = () => {
 
               {/* === QUALIFICATION 5 === */}
               <div className="qualification__data">
-              <div>
-                  <h3 className="qualification__title">Software Engineer</h3>
+                <div>
+                  <h3 className="qualification__title">DevOps Engineer</h3>
                   <span className="qualification__subtitle">Crane Cloud - Uganda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2019 - 2021
+                    2021 - 2022
                   </div>
                 </div>
 
@@ -431,12 +508,29 @@ const Main = () => {
                 </div>
 
                 <div>
+                  <h3 className="qualification__title">Software Engineer</h3>
+                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2019 - 2021
+                  </div>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 7 === */}
+              <div className="qualification__data">
+                <div>
                   <h3 className="qualification__title">Developer Consultant</h3>
                   <span className="qualification__subtitle">Flock Of Birds - Uganda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
                     2018 - 2019
                   </div>
+                </div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
                 </div>
               </div>
             </div>
@@ -650,116 +744,84 @@ const Main = () => {
         <span className="section__subtitle">Some recent projects I have done</span>
 
         <div className="portfolio__container container">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" className={`${activeCarousel === 1 ? 'active' : ''}`}></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1" className={`${activeCarousel === 2 ? 'active' : ''}`}></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2" className={`${activeCarousel === 3 ? 'active' : ''}`}></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2" className={`${activeCarousel === 4 ? 'active' : ''}`}></li>
-            </ol>
-
-            <div class="carousel-inner">
-              <div class={`carousel-item ${activeCarousel === 1 ? 'active' : ''}`}>
-                {/* === PROJECT 1 === */}
-                <div className="portfolio__content grid">
-                  <img src={ccImg} className="portfolio__img" alt="Project 1 Crane Cloud" />
-
-                  <div className="portfolio__data">
-                    <h3 className="portfolio__title">Crane Cloud Web Client</h3>
-                    <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
-                    <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                      Demo
-                      <i className="uil uil-arrow-right button__icon"></i>
-                    </a>
-                  </div>
+          <div className="portfolio__grid">
+            {/* === PROJECT 1 - EVENTLY === */}
+            <div className="portfolio__item">
+              <img src={expoImg} className="portfolio__img" alt="Evently Mobile App" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">EVENTLY</h3>
+                <p className="portfolio__description">Designed and implemented a mobile app for discovering and booking events, focusing on intuitive navigation and seamless user engagement. Built with React Native for cross-platform compatibility and optimal performance.</p>
+                <div className="button button--flex button--small portfolio__button" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                  Mobile App (No Demo)
+                  <i className="uil uil-mobile-android button__icon"></i>
                 </div>
               </div>
-
-              <div class={`carousel-item ${activeCarousel === 2 ? 'active' : ''}`}>
-
-                {/* === PROJECT 2 === */}
-                <div className="portfolio__content grid">
-                  <img src={coastImg} className="portfolio__img" alt="Project 2 Coast" />
-
-                  <div className="portfolio__data">
-                    <h3 className="portfolio__title">Coast Website</h3>
-                    <p className="portfolio__description">In this project, I was tasked to develop the website for COAST (an end-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda).</p>
-                    <a href="https://coastug.org" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                      Demo
-                      <i className="uil uil-arrow-right button__icon"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class={`carousel-item ${activeCarousel === 3 ? 'active' : ''}`}>
-                {/* === PROJECT 3 === */}
-                <div className="portfolio__content grid">
-                  <img src={petsImg} className="portfolio__img" alt="Project 3 PetsInTown" />
-
-                  <div className="portfolio__data">
-                    <h3 className="portfolio__title">Online Pet Shop</h3>
-                    <p className="portfolio__description">Online pet shop and veterinary service.<br />Designed using Figma and implemented using React, Node.js, and MongoDB.<br />This is a project that I developed in a team with a friend.<br />He focused on the backend while I implemented the Frontend in React.</p>
-                    <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                      Demo
-                      <i className="uil uil-arrow-right button__icon"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class={`carousel-item ${activeCarousel === 4 ? 'active' : ''}`}>
-                {/* === PROJECT 4 === */}
-                <div className="portfolio__content grid">
-                  <img src={covidImg} className="portfolio__img" alt="Project 4 Covid Tracker" />
-
-                  <div className="portfolio__data">
-                    <h3 className="portfolio__title">Covid Tracker</h3>
-                    <p className="portfolio__description">A simple project that I did during the lockdown to fetch data about COVID cases from an API and display it on a simple React app. <br />I implemented this project using React and the Axios fetching library.</p>
-                    <a href="https://stephenaraka.github.io/covid-tracker-app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                      Demo
-                      <i className="uil uil-arrow-right button__icon"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
-            <a
-              class="carousel-control-prev swiper-button-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-              onClick={() => {
-                if (activeCarousel === 1) {
-                  setActiveCarousel(4)
-                  return
-                }
-                setActiveCarousel(activeCarousel - 1)
-              }}
-            >
-              <i className="uil uil-angle-left-b portfolio__modal-icon"></i>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next swiper-button-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-              onClick={() => {
-                if (activeCarousel === 4) {
-                  setActiveCarousel(1)
-                  return
-                }
-                console.log(activeCarousel)
-                setActiveCarousel(activeCarousel + 1)
-              }}
-            >
-              <i className="uil uil-angle-right-b portfolio__modal-icon"></i>
-              <span class="sr-only">Next</span>
-            </a>
+            {/* === PROJECT 2 - WISDOM === */}
+            <div className="portfolio__item">
+              <img src={expoImg} className="portfolio__img" alt="Wisdom Mobile App" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">WISDOM</h3>
+                <p className="portfolio__description">Created a mobile app delivering daily wisdom quotes through a clean, minimal interface to promote positivity and reflection. Features beautiful typography, smooth animations, and personalized quote collections.</p>
+                <div className="button button--flex button--small portfolio__button" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                  Mobile App (No Demo)
+                  <i className="uil uil-mobile-android button__icon"></i>
+                </div>
+              </div>
+            </div>
+
+            {/* === PROJECT 3 - CRANE CLOUD === */}
+            <div className="portfolio__item">
+              <img src={ccImg} className="portfolio__img" alt="Crane Cloud Web Client" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">Crane Cloud Web Client</h3>
+                <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
+                <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* === PROJECT 4 - ZURI GAS === */}
+            <div className="portfolio__item">
+              <img src={zuriImg} className="portfolio__img" alt="Zuri Gas Platform" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">ZURI GAS</h3>
+                <p className="portfolio__description">Developed a secure web platform that enables users around Nairobi to verify authenticity and safely purchase cooking gas online, enhancing trust and convenience in the supply chain. Built with modern web technologies for optimal user experience.</p>
+                <a href="https://www.zurigas.com/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* === PROJECT 5 - SMART BUILD AI === */}
+            <div className="portfolio__item">
+              <img src={smartBuildImg} className="portfolio__img" alt="Smart Build AI Platform" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">SMART BUILD AI</h3>
+                <p className="portfolio__description">Built a smart budget estimation platform that leverages AI to provide accurate construction cost forecasts for contractors, architects, and individual homeowners. Features intelligent cost analysis and project planning tools.</p>
+                <a href="https://smart-buildai.com/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* === PROJECT 6 - PETSHOP === */}
+            <div className="portfolio__item">
+              <img src={petsImg} className="portfolio__img" alt="Online Pet Shop" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">Online Pet Shop</h3>
+                <p className="portfolio__description">Online pet shop and veterinary service. Designed using Figma and implemented using React, Node.js, and MongoDB. This is a project that I developed in a team with a friend. He focused on the backend while I implemented the Frontend in React.</p>
+                <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
