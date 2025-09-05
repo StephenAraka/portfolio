@@ -10,7 +10,7 @@ const themeColors = ['#57e085', '#576ee0', '#6e57e0', '#e05785'];
 function App() {
   const [y, setY] = useState(window.scrollY);
   const [themeColor, setThemeColor] = useState('#6e57e0');
-  const [isDarkTheme, setIsDarkTheme] = useState(true)
+  const [isDarkTheme, setIsDarkTheme] = useState(false)
 
   useEffect(() => {
     window.addEventListener("scroll", (e) => setY(window.scrollY));
