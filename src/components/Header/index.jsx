@@ -59,7 +59,7 @@ const Header = ({ isDark, changeTheme, activeColor, themeColors, changeColor }) 
             </li>
             <li className="nav__item" onClick={() => setShowMenu(false)}>
               <a href="#portfolio" className="nav__link">
-                <i className="uil uil-scenery"></i> Portfolio
+                <i className="uil uil-scenery"></i> Projects
               </a>
             </li>
             <li className="nav__item" onClick={() => setShowMenu(false)}>

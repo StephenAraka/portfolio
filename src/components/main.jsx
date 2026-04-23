@@ -10,6 +10,10 @@ import petsImg from '../assets/img/pets.png';
 import zuriImg from '../assets/img/zuri.png';
 import smartBuildImg from '../assets/img/smart-build.png';
 import expoImg from '../assets/img/expo.webp';
+import eventlyImg from '../assets/img/evently-app.png';
+import hubproofImg from '../assets/img/hubproof.png';
+import resumePdf from '../assets/pdf/StephenAraka_resume.pdf';
+import mobileAppsPdf from '../assets/pdf/Mobile App Portfolio.pdf';
 
 const Main = () => {
   const [showSkills1, setShowSkills1] = useState(true);
@@ -88,9 +92,17 @@ const Main = () => {
             <p className="home__description">
               I am a Software Engineer with over six years of extensive experience in software development. I design, create, and maintain software products for companies to enhance their business operations.
             </p>
-            <a href="#contact" className="button button--flex">
-              Contact Me <i className="uil uil-message button__icon"></i>
-            </a>
+            <div className="home__buttons">
+              <a href="#contact" className="button button--flex">
+                Contact Me <i className="uil uil-message button__icon"></i>
+              </a>
+              <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="button button--flex button--ghost">
+                View Resume <i className="uil uil-file-alt button__icon"></i>
+              </a>
+              <a href={mobileAppsPdf} target="_blank" rel="noopener noreferrer" className="button button--flex button--ghost">
+                View Mobile Apps Portfolio <i className="uil uil-mobile-android button__icon"></i>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -140,6 +152,114 @@ const Main = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* <!--==================== PROJECTS ====================--> */}
+      <section className="portfolio section" id="portfolio">
+        <h2 className="section__title">Projects</h2>
+        <span className="section__subtitle">Some recent projects I have done</span>
+
+        <div className="portfolio__container container">
+          <div className="portfolio__grid">
+            {/* === PROJECT 1 - EVENTLY === */}
+            <div className="portfolio__item">
+              <img src={eventlyImg} className="portfolio__img" alt="Evently Mobile App" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">EVENTLY</h3>
+                <p className="portfolio__description">Designed and implemented a mobile app for discovering and booking events, focusing on intuitive navigation and seamless user engagement. Built with React Native for cross-platform compatibility and optimal performance.</p>
+                <div className="button button--flex button--small portfolio__button" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                  Mobile App (No Demo)
+                  <i className="uil uil-mobile-android button__icon"></i>
+                </div>
+              </div>
+            </div>
+
+            {/* === PROJECT 2 - WISDOM === */}
+            <div className="portfolio__item">
+              <img src={expoImg} className="portfolio__img" alt="Wisdom Mobile App" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">WISDOM</h3>
+                <p className="portfolio__description">Created a mobile app delivering daily wisdom quotes through a clean, minimal interface to promote positivity and reflection. Features beautiful typography, smooth animations, and personalized quote collections.</p>
+                <div className="button button--flex button--small portfolio__button" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                  Mobile App (No Demo)
+                  <i className="uil uil-mobile-android button__icon"></i>
+                </div>
+              </div>
+            </div>
+
+            {/* === PROJECT 3 - HUBPROOF === */}
+            <div className="portfolio__item">
+              <img src={hubproofImg} className="portfolio__img" alt="HubProof Platform" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">HUBPROOF</h3>
+                <p className="portfolio__description">An online writing platform that connects clients with skilled professionals to get quality writing work done. HubProof streamlines the hiring process for content creation, copywriting, academic writing, and more — with built-in tools for project management and secure payments.</p>
+                <a href="https://hubproof.com" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* === PROJECT 4 - CRANE CLOUD === */}
+            <div className="portfolio__item">
+              <img src={ccImg} className="portfolio__img" alt="Crane Cloud Web Client" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">Crane Cloud Web Client</h3>
+                <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
+                <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* === PROJECT 5 - ZURI GAS === */}
+            <div className="portfolio__item">
+              <img src={zuriImg} className="portfolio__img" alt="Zuri Gas Platform" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">ZURI GAS</h3>
+                <p className="portfolio__description">Developed a secure web platform that enables users around Nairobi to verify authenticity and safely purchase cooking gas online, enhancing trust and convenience in the supply chain. Built with modern web technologies for optimal user experience.</p>
+                <a href="https://www.zurigas.com/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* === PROJECT 6 - SMART BUILD AI === */}
+            <div className="portfolio__item">
+              <img src={smartBuildImg} className="portfolio__img" alt="Smart Build AI Platform" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">SMART BUILD AI</h3>
+                <p className="portfolio__description">Built a smart budget estimation platform that leverages AI to provide accurate construction cost forecasts for contractors, architects, and individual homeowners. Features intelligent cost analysis and project planning tools.</p>
+                <a href="https://smart-buildai.com/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* === PROJECT 7 - PETSHOP === */}
+            <div className="portfolio__item">
+              <img src={petsImg} className="portfolio__img" alt="Online Pet Shop" />
+              <div className="portfolio__data">
+                <h3 className="portfolio__title">Online Pet Shop</h3>
+                <p className="portfolio__description">Online pet shop and veterinary service. Designed using Figma and implemented using React, Node.js, and MongoDB. This is a project that I developed in a team with a friend. He focused on the backend while I implemented the Frontend in React.</p>
+                <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
+                  Demo
+                  <i className="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="portfolio__download">
+            <a href={mobileAppsPdf} className="button button--flex" download="Mobile App Portfolio.pdf">
+              Download Mobile Apps Portfolio <i className="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
+        </div>
+
       </section>
 
       {/* <!--==================== SKILLS ====================--> */}
@@ -478,23 +598,23 @@ const Main = () => {
                 </div>
 
                 <div>
+                  <h3 className="qualification__title">Software Developer Consultant</h3>
+                  <span className="qualification__subtitle">Seargent Solutions - Nairobi, Kenya</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    January 2025 - Present · Part time
+                  </div>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 3 === */}
+              <div className="qualification__data">
+                <div>
                   <h3 className="qualification__title">Fullstack Software Engineer</h3>
                   <span className="qualification__subtitle">atlasGO - San Fransisco, US <br /> teroGO - Belgium</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
                     2022 - 2024
-                  </div>
-                </div>
-              </div>
-              
-              {/* === QUALIFICATION 3 === */}
-              <div className="qualification__data">
-                <div>
-                  <h3 className="qualification__title">Frontend Engineer</h3>
-                  <span className="qualification__subtitle">Jumia - Kenya</span>
-                  <div className="qualification__calendar">
-                    <i className="uil uil-calendar"></i>
-                    2022 - 2023
                   </div>
                 </div>
 
@@ -514,20 +634,20 @@ const Main = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">Graduate Teaching Assistant</h3>
-                  <span className="qualification__subtitle">Carnegie Mellon University - Rwanda</span>
+                  <h3 className="qualification__title">Frontend Engineer</h3>
+                  <span className="qualification__subtitle">Jumia - Kenya</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2021 - 2022
+                    2022 - 2023
                   </div>
                 </div>
               </div>
-
+              
               {/* === QUALIFICATION 5 === */}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">DevOps Engineer</h3>
-                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
+                  <h3 className="qualification__title">Graduate Teaching Assistant</h3>
+                  <span className="qualification__subtitle">Carnegie Mellon University - Rwanda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
                     2021 - 2022
@@ -550,11 +670,11 @@ const Main = () => {
                 </div>
 
                 <div>
-                  <h3 className="qualification__title">Software Engineer</h3>
+                  <h3 className="qualification__title">DevOps Engineer</h3>
                   <span className="qualification__subtitle">Crane Cloud - Uganda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2019 - 2021
+                    2021 - 2022
                   </div>
                 </div>
               </div>
@@ -562,17 +682,36 @@ const Main = () => {
               {/* === QUALIFICATION 7 === */}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">Developer Consultant</h3>
-                  <span className="qualification__subtitle">Flock Of Birds - Uganda</span>
+                  <h3 className="qualification__title">Software Engineer</h3>
+                  <span className="qualification__subtitle">Crane Cloud - Uganda</span>
                   <div className="qualification__calendar">
                     <i className="uil uil-calendar"></i>
-                    2018 - 2019
+                    2019 - 2021
                   </div>
                 </div>
 
                 <div>
                   <span className="qualification__rounder"></span>
                   <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              {/* === QUALIFICATION 8 === */}
+              <div className="qualification__data">
+                <div></div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 className="qualification__title">Developer Consultant</h3>
+                  <span className="qualification__subtitle">Flock Of Birds - Uganda</span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar"></i>
+                    2018 - 2019
+                  </div>
                 </div>
               </div>
             </div>
@@ -773,95 +912,6 @@ const Main = () => {
                     Soon transitioning to DevOps ⏳
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      {/* <!--==================== PORTFOLIO ====================--> */}
-      <section className="portfolio section" id="portfolio">
-        <h2 className="section__title">Portfolio</h2>
-        <span className="section__subtitle">Some recent projects I have done</span>
-
-        <div className="portfolio__container container">
-          <div className="portfolio__grid">
-            {/* === PROJECT 1 - EVENTLY === */}
-            <div className="portfolio__item">
-              <img src={expoImg} className="portfolio__img" alt="Evently Mobile App" />
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">EVENTLY</h3>
-                <p className="portfolio__description">Designed and implemented a mobile app for discovering and booking events, focusing on intuitive navigation and seamless user engagement. Built with React Native for cross-platform compatibility and optimal performance.</p>
-                <div className="button button--flex button--small portfolio__button" style={{opacity: 0.6, cursor: 'not-allowed'}}>
-                  Mobile App (No Demo)
-                  <i className="uil uil-mobile-android button__icon"></i>
-                </div>
-              </div>
-            </div>
-
-            {/* === PROJECT 2 - WISDOM === */}
-            <div className="portfolio__item">
-              <img src={expoImg} className="portfolio__img" alt="Wisdom Mobile App" />
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">WISDOM</h3>
-                <p className="portfolio__description">Created a mobile app delivering daily wisdom quotes through a clean, minimal interface to promote positivity and reflection. Features beautiful typography, smooth animations, and personalized quote collections.</p>
-                <div className="button button--flex button--small portfolio__button" style={{opacity: 0.6, cursor: 'not-allowed'}}>
-                  Mobile App (No Demo)
-                  <i className="uil uil-mobile-android button__icon"></i>
-                </div>
-              </div>
-            </div>
-
-            {/* === PROJECT 3 - CRANE CLOUD === */}
-            <div className="portfolio__item">
-              <img src={ccImg} className="portfolio__img" alt="Crane Cloud Web Client" />
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">Crane Cloud Web Client</h3>
-                <p className="portfolio__description">I designed and implemented cranecloud.io, an open source web platform used to manage Infrastructure-as-a Service on premise and multiple public clouds while working specifically as a leading front-end engineer using React and Redux.</p>
-                <a href="https://cranecloud.io" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* === PROJECT 4 - ZURI GAS === */}
-            <div className="portfolio__item">
-              <img src={zuriImg} className="portfolio__img" alt="Zuri Gas Platform" />
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">ZURI GAS</h3>
-                <p className="portfolio__description">Developed a secure web platform that enables users around Nairobi to verify authenticity and safely purchase cooking gas online, enhancing trust and convenience in the supply chain. Built with modern web technologies for optimal user experience.</p>
-                <a href="https://www.zurigas.com/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* === PROJECT 5 - SMART BUILD AI === */}
-            <div className="portfolio__item">
-              <img src={smartBuildImg} className="portfolio__img" alt="Smart Build AI Platform" />
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">SMART BUILD AI</h3>
-                <p className="portfolio__description">Built a smart budget estimation platform that leverages AI to provide accurate construction cost forecasts for contractors, architects, and individual homeowners. Features intelligent cost analysis and project planning tools.</p>
-                <a href="https://smart-buildai.com/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* === PROJECT 6 - PETSHOP === */}
-            <div className="portfolio__item">
-              <img src={petsImg} className="portfolio__img" alt="Online Pet Shop" />
-              <div className="portfolio__data">
-                <h3 className="portfolio__title">Online Pet Shop</h3>
-                <p className="portfolio__description">Online pet shop and veterinary service. Designed using Figma and implemented using React, Node.js, and MongoDB. This is a project that I developed in a team with a friend. He focused on the backend while I implemented the Frontend in React.</p>
-                <a href="https://petsintown.netlify.app/" target="_blank" rel="noopener noreferrer" className="button button--flex button--small portfolio__button">
-                  Demo
-                  <i className="uil uil-arrow-right button__icon"></i>
-                </a>
               </div>
             </div>
           </div>
