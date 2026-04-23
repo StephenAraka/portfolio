@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
 const Header = ({ isDark, changeTheme, activeColor, themeColors, changeColor }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -33,7 +32,7 @@ const Header = ({ isDark, changeTheme, activeColor, themeColors, changeColor }) 
     // <!--==================== HEADER ====================-->
     <header className="header scroll-header" id="header">
       <nav className="containerx nav">
-        <a href="#" className="nav__logo">Stephen</a>
+        <a href="#home" className="nav__logo">Stephen</a>
 
         <div className={`nav__menu ${(showMenu ? 'show-menu' : '')}`} id="nav-menu">
           <ul className="nav__list grid">
@@ -89,7 +88,7 @@ const Header = ({ isDark, changeTheme, activeColor, themeColors, changeColor }) 
                 <div className="color-buttons">
                   {themeColors.filter(color => color !== activeColor).map(inactiveColor => (
                     <div
-                      key={Math.random()}
+                      key={inactiveColor}
                       onClick={() => changeColor(inactiveColor)}
                       className={`change-color-btn ${hexToNameCol(inactiveColor)}`}
                     />
