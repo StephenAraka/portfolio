@@ -2,7 +2,7 @@ import React from 'react';
 import './ScrollUp.css';
 
 const ScrollToTop = () => (
-  <a href="#" className="scrollup" onClick={scrollToTop} id="scroll-up">
+  <a href="#home" className="scrollup" onClick={scrollToTop} id="scroll-up">
     <i className="uil uil-arrow-up scrollup__icon"></i>
   </a>
 );
