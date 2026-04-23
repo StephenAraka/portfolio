@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 // import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
 // import { ReactComponent as ProfilePic } from '../assets/img/profile-pic.svg';
 import ProfilePic from '../assets/img/profile-pic.jsx';
@@ -71,13 +70,13 @@ const Main = () => {
       <section className="home section" id="home">
         <div className="home__container containerx grid">
           <div className="home__social">
-            <a href="https://www.linkedin.com/in/stephen-araka" target="_blank" className="home__social-icon">
+            <a href="https://www.linkedin.com/in/stephen-araka" target="_blank" rel="noopener noreferrer" className="home__social-icon">
               <i className="uil uil-linkedin-alt"></i>
             </a>
-            <a href="https://github.com/StephenAraka" target="_blank" className="home__social-icon">
+            <a href="https://github.com/StephenAraka" target="_blank" rel="noopener noreferrer" className="home__social-icon">
               <i className="uil uil-github-alt"></i>
             </a>
-            <a href="https://twitter.com/StivoAraka" target="_blank" className="home__social-icon">
+            <a href="https://twitter.com/StivoAraka" target="_blank" rel="noopener noreferrer" className="home__social-icon">
               <i className="uil uil-twitter-alt"></i>
             </a>
           </div>
@@ -1015,13 +1014,13 @@ const Main = () => {
 
             {submitStatus === 'success' && (
               <div className="contact__success">
-                <p>✅ Message sent successfully! I'll get back to you soon.</p>
+                <p><span role="img" aria-label="success">✅</span> Message sent successfully! I'll get back to you soon.</p>
               </div>
             )}
 
             {submitStatus === 'error' && (
               <div className="contact__error">
-                <p>❌ Failed to send message. Please try again or email me directly.</p>
+                <p><span role="img" aria-label="error">❌</span> Failed to send message. Please try again or email me directly.</p>
               </div>
             )}
 
